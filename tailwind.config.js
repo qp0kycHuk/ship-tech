@@ -1,9 +1,9 @@
 const elementsSizes = {
-  xs: '24px',
-  sm: '32px',
-  base: '42px',
-  lg: '52px',
-  xl: '64px',
+  xs: '32px',
+  sm: '40px',
+  base: '56px',
+  lg: '64px',
+  xl: '72px',
 }
 
 const headingStyles = {
@@ -50,7 +50,7 @@ module.exports = {
       default: withOpacity('--default-rgb'),
     },
     fontFamily: {
-      base: "'SF Pro Display', arial, helvetica, sans-serif",
+      base: "'Inter', arial, helvetica, sans-serif",
     },
     zIndex: [0, 321, 322, 323, 324, 325, 326, 327, 328, 329, 'auto'],
     extend: {
@@ -67,6 +67,7 @@ module.exports = {
       fontSize: {
         '1.5xl': ['1.375rem', '1.35'],
         '2.1xl': ['1.5625rem', '1.35'],
+        '2.2xl': [26 / 16 + 'rem', '1.35'],
         '2.5xl': ['1.75rem', '1.35'],
         '3.5xl': ['2rem', '1.35'],
         '4.5xl': ['2.5rem', '1.35'],

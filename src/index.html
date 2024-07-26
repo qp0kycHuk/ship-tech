@@ -1,5 +1,129 @@
 <%= require('./html-includes/header.html')() %>
 
-<div class="doc"></div>
+<header class="header">
+  <div class="flex items-center gap-3 sm:gap-6">
+    <img src="/img/logo.svg" alt="" class="header-logo">
+    <img src="/img/ship-logo.svg" alt="" class="header-logo">
+  </div>
+
+  <div class="flex items-center gap-12 max-lg:hidden">
+    <c-menu>
+      <c-menu-button class="btn btn-text hover-underline relative gap-3">
+        <div class="absolute -inset-6"></div>
+        <span class="opacity-70"> О мероприяти</span>
+        <c-icon class="icon opacity-70 group-[.active]:-rotate-90 text-xs" href="img/icons.svg#to-right"></c-icon>
+      </c-menu-button>
+      <c-menu-items class="p-2 max-md:py-6 w-64">
+        <a href="javascript:;" class="btn btn-xs btn-primary rounded-md px-2">
+          <span class="font-normal w-full text-default">Описание</span>
+        </a>
+        <a href="javascript:;" class="btn btn-xs btn-primary rounded-md px-2">
+          <span class="font-normal w-full text-default">Участники мероприятия</span>
+        </a>
+        <a href="javascript:;" class="btn btn-xs btn-primary rounded-md px-2">
+          <span class="font-normal w-full text-default">Деловая программа</span>
+        </a>
+        <a href="javascript:;" class="btn btn-xs btn-primary rounded-md px-2">
+          <span class="font-normal w-full text-default">Новости</span>
+        </a>
+        <a href="javascript:;" class="btn btn-xs btn-primary rounded-md px-2">
+          <span class="font-normal w-full text-default">Место проведения</span>
+        </a>
+        <a href="javascript:;" class="btn btn-xs btn-primary rounded-md px-2">
+          <span class="font-normal w-full text-default">Регистрация</span>
+        </a>
+        <a href="javascript:;" class="btn btn-xs btn-primary rounded-md px-2">
+          <span class="font-normal w-full text-default">Контакты</span>
+        </a>
+      </c-menu-items>
+    </c-menu>
+    <a href="javascript:;" class="btn btn-text hover-underline relative">
+      <div class="absolute -inset-6"></div>
+      <span class="opacity-70">Регистрация</span>
+    </a>
+    <a href="javascript:;" class="btn btn-text hover-underline relative">
+      <div class="absolute -inset-6"></div>
+      <span class="opacity-70">Контакты</span>
+    </a>
+  </div>
+
+  <c-menu>
+    <c-menu-button class="btn btn-white btn-sm p-3 relative gap-3">
+      <div class="absolute -inset-6"></div>
+      <img src="img/lang/rus.png" alt="" class="size-6">
+      <c-icon class="icon opacity-70 group-[.active]:-rotate-90 text-xs text-white" href="img/icons.svg#to-right"></c-icon>
+    </c-menu-button>
+    <c-menu-items class="p-2 max-md:py-6 w-64 space-y-0.5" placement="bottom">
+      <a href="javascript:;" class="btn btn-xs btn-primary rounded-md px-2 gap-3">
+        <img src="img/lang/rus.png" alt="" class="size-6">
+        <span class="font-normal w-full text-default">Русский</span>
+      </a>
+      <a href="javascript:;" class="btn btn-xs btn-primary rounded-md px-2 gap-3">
+        <img src="img/lang/en.png" alt="" class="size-6">
+        <span class="font-normal w-full text-default">Английский</span>
+      </a>
+    </c-menu-items>
+  </c-menu>
+
+  <button class="btn btn-text hover-underline relative">
+    <div class="absolute -inset-6"></div>
+    <span class="font-extrabold text-xl">+7 900 000-00-00</span>
+  </button>
+</header>
+
+<section class="started">
+  <div class="started-background absolute-fit">
+    <img src="img/started-texture.jpg" alt="" class="absolute-fit object-cover">
+    <img src="img/started-lines-left.svg" alt="" class="absolute-fit object-cover object-left-top max-md:hidden" loading="lazy">
+    <img src="img/started-lines-right.svg" alt="" class="absolute-fit object-cover object-right-top max-md:hidden" loading="lazy">
+    <img src="img/started-lines-sm.svg" alt="" class="absolute-fit object-contain object-right-top md:hidden" loading="lazy">
+  </div>
+  <div class="started-radar radar">
+    <div class="radar-line radar-line-1"></div>
+    <div class="radar-line radar-line-2"></div>
+    <div class="radar-line radar-line-3"></div>
+
+    <div class="radar-monitor">
+      <div class="radar-indicator"></div>
+      <div class="radar-screen">
+        <img src="/img/radar-lines.svg" alt="" class="radar-lines">
+
+        <div class="absolute left-20 top-1/4 text-7xl font-bold">Х У Й</div>
+
+        <img src="/img/test.gif" alt="" class="absolute top-36 right-40 w-28">
+      </div>
+    </div>
+
+  </div>
+  <div class="started-content">
+    <div class="mb-10 started-logo">
+      <img src="/img/logo.svg" alt="">
+    </div>
+    <div class="uppercase font-bold text-1.5xl md:text-4xl mb-4">
+      СПЕЦИАЛИЗИРОВАННАЯ ЭКСПОЗИЦИЯ
+    </div>
+    <div class="uppercase font-bold md::text-2.2xl started-subtitle">
+      СУДОСТРОЕНИЯ, СУДОРЕМОНТА, ОБОРУДОВАНИЯ <br class="max-sm:hidden">
+      И ПОРТОВОЙ ИНФРАСТРУКТУРЫ
+    </div>
+    <div class="started-date mt-6 sm:mt-12">
+      <div class="flex items-center bg-white text-primary px-8 py-5 gap-4">
+        <c-icon class="icon text-3.5xl" href="img/icons.svg#calendar"></c-icon>
+        <div class="uppercase text-xl md:text-3xl font-bold">17-19 сентября 2024</div>
+      </div>
+      <div class="uppercase p-4 font-bold max-md:text-sm">
+        Санкт-Петербург, КВЦ «ЭКСПОФОРУМ»
+      </div>
+    </div>
+
+    <button class="btn btn-sec btn-fill gap-2 text-black mt-6 sm:mt-12">
+      <c-icon class="icon text-1.5xl" href="img/icons.svg#anchor"></c-icon>
+      Забронировать стенд
+    </button>
+  </div>
+</section>
+
+
+<div class="h-[2000px]"></div>
 
 <%= require('./html-includes/footer.html')() %>

@@ -31,4 +31,12 @@ function loadHandler() {
   swiper.init()
   ymaps.init()
   animations.init()
+
+  scrollHandler()
+}
+
+window.addEventListener('scroll', scrollHandler)
+
+function scrollHandler() {
+  document.body.classList.toggle('scroll-top', window.scrollY == 0)
 }
