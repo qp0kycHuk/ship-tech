@@ -53,6 +53,76 @@
 </section>
 
 
+<section class="sign relative">
+  <img src="img/sign-lines.png" alt="" class="absolute-fit opacity-30">
+  <img src="img/ship-logo.svg" alt="" class="w-8 h-6 sm:h-7 sm:w-10 relative">
+  <div class="font-semibold relative max-sm:text-2xs">В рамках Global Fishery Forum & Seafood Expo Russia</div>
+</section>
+
+<section class="about">
+  <div>
+    <div class="title mb-6 sm:mb-10">о мероприятии</div>
+    <div class="leading-normal max-lg:text-sm">
+      <b>
+        SHIP TECH GLOBAL – проект выставочной команды Expo Solutions Group – организатора выставки Seafood Expo Russia.
+      </b>
+      <br><br>
+      Стремительный рост разделов судового оборудования и судостроения в рамках рыбопромышленной выставки, а также успешный опыт организаторов в обеспечении эффективного взаимодействия всех участников отрасли, который выражается в реальных заказах и росте бизнеса компаний, позволили расширить тематику и предложить аналогичный подход к сотрудничеству и налаживанию новых взаимовыгодных связей для всей индустрии гражданского судостроения.
+    </div>
+    <div class="about-jigurda mt-10 relative ">
+      <img src="img/about-jigurda.png" alt="" class="absolute-fit object-right-top">
+      <div class="relative">
+        <div class="font-semibold max-sm:text-sm">
+          SHIP TECH GLOBAL – новое место встречи всех
+          представителей индустрии гражданского судостроения,
+          судоремонта и портовой инфраструктуры
+        </div>
+        <button class="btn btn-sec btn-fill gap-2 text-black mt-6 ">
+          <c-icon class="icon text-1.5xl" href="img/icons.svg#anchor"></c-icon>
+          Забронировать стенд
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="ratio ratio-1/1 rounded-2xl overflow-hidden">
+    <img src="img/test.gif" alt="" class="absolute-fit object-cover">
+  </div>
+</section>
+
+<section class="this">
+  <div class="title sm:text-center mb-6 sm:mb-10">SHIP TECH GLOBAL - это</div>
+  <div class="grid lg:grid-cols-2 gap-2.5">
+    <% for(let i = 0; i < 4; i++) { %>
+    <div class="shadow-base p-2 flex gap-6 items-center bg-l3 rounded-2xl">
+      <div class="h-16 sm:h-20 w-24 sm:w-40 bg-primary/10 rounded-xl flex">
+        <div class="font-black text-xl sm:text-3.5xl m-auto text-primary">200+</div>
+      </div>
+      <div class="font-semibold max-sm:text-sm">российских и зарубежных компаний</div>
+    </div>
+    <% } %>
+  </div>
+  <div class="grid lg:grid-cols-2 gap-2.5 mt-6">
+    <div class="this-anchors">
+      <div class="flex flex-col gap-5 sm:gap-7">
+        <% for(let i = 0; i < 4; i++) { %>
+        <div class="flex items-center gap-2 sm:gap-5">
+          <div class="size-10 flex bg-sec rounded-lg shrink-0 text-black">
+            <c-icon class="icon text-lg m-auto" href="img/icons.svg#anchor"></c-icon>
+          </div>
+          <div class="max-sm:text-sm">
+            <b>Уникальная аудитория</b> судовладельцев
+            и поставщиков и судостроителей
+          </div>
+        </div>
+        <% } %>
+      </div>
+    </div>
+    <div class="ratio ratio-[610/352] rounded-2xl overflow-hidden">
+      <img src="img/test.gif" alt="" class="absolute-fit object-cover">
+    </div>
+  </div>
+</section>
+
 <div class="h-[2000px]"></div>
 
 <%= require('./html-includes/footer.html')() %>

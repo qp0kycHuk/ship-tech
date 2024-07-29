@@ -12,7 +12,7 @@
 
   // colors
   --bg1-rgb     : #{cl(#ededed)};
-  --bg2-rgb     : #{cl(#F5F7FB)};
+  --bg2-rgb     : #{cl(#EEF2F8)};
   --bg3-rgb     : #{cl(#fff)};
   --default-rgb : #{cl(#2D2E30)};
   --black-rgb   : #{cl(#2D2E30)};
@@ -118,6 +118,21 @@ body {
     &-text {
       border-radius: initial;
       font-weight  : initial;
+    }
+  }
+
+  .title {
+    font-size     : 42px;
+    font-weight   : 700;
+    line-height   : calc(51 / 42);
+    text-transform: uppercase;
+
+    @media (max-width: theme('screens.lg')) {
+      font-size: 32px;
+    }
+
+    @media (max-width: theme('screens.md')) {
+      font-size: 28px;
     }
   }
 }
@@ -253,5 +268,69 @@ body {
   &:not(.toggle-active)+&-shadow {
     opacity       : 0;
     pointer-events: none;
+  }
+}
+
+.sign {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  gap            : 12px;
+  background     : linear-gradient(0deg, rgba(33, 182, 252, 0.7), rgba(33, 182, 252, 0.7)),
+    linear-gradient(90deg, rgba(61, 174, 227, 0) 0%, #72D2FF 100%);
+  color         : #fff;
+  padding-top   : 10px;
+  padding-bottom: 10px;
+}
+
+.about {
+  display              : grid;
+  align-items          : start;
+  grid-template-columns: 554fr 600fr;
+  gap                  : 76px;
+  padding-top          : 78px;
+  padding-bottom       : 78px;
+  background           : theme('colors.l3');
+
+  @media (max-width: theme('screens.lg')) {
+    gap: 32px;
+  }
+
+  @media (max-width: theme('screens.md')) {
+    grid-template-columns: 1fr;
+    padding-top          : 32px;
+    padding-bottom       : 32px;
+  }
+
+  &-jigurda {
+    padding      : 24px;
+    border-radius: 16px;
+    background   : #EEF2F8;
+
+    @media (max-width: theme('screens.md')) {
+      padding: 16px;
+    }
+
+  }
+}
+
+.this {
+  padding-top   : 64px;
+  padding-bottom: 80px;
+
+  @media (max-width: theme('screens.sm')) {
+    padding-top   : 32px;
+    padding-bottom: 32px;
+  }
+
+  &-anchors {
+    background   : url("../img/this-anchors.jpg") no-repeat right top / cover, theme('colors.primary');
+    color        : #fff;
+    padding      : 40px;
+    border-radius: 16px;
+
+    @media (max-width: theme('screens.sm')) {
+      padding: 20px 10px;
+    }
   }
 }
