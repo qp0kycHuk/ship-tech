@@ -219,6 +219,39 @@ body {
     @media (max-width: theme('screens.lg')) {
       --radius: calc(620px / 2);
 
+      bottom: -422px;
     }
+  }
+}
+
+.menu {
+  position      : fixed;
+  left          : 0;
+  top           : 0;
+  height        : 100%;
+  width         : 425px;
+  max-width     : 100%;
+  z-index       : theme('zIndex.3');
+  background    : theme('colors.l3');
+  padding       : 16px 16px 24px;
+  display       : flex;
+  flex-direction: column;
+  transition    : .25s ease;
+
+  &:not(.toggle-active) {
+    transform: translateX(-100%);
+  }
+
+  &-shadow {
+    position  : fixed;
+    inset     : 0;
+    z-index   : calc(theme('zIndex.3') - 1);
+    background: rgba(0, 0, 0, 0.5);
+    transition: .25s ease;
+  }
+
+  &:not(.toggle-active)+&-shadow {
+    opacity       : 0;
+    pointer-events: none;
   }
 }
