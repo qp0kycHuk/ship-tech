@@ -290,7 +290,6 @@ body {
   gap                  : 76px;
   padding-top          : 78px;
   padding-bottom       : 78px;
-  background           : theme('colors.l3');
 
   @media (max-width: theme('screens.lg')) {
     gap: 32px;
@@ -318,9 +317,12 @@ body {
   padding-top   : 64px;
   padding-bottom: 80px;
 
+  background: url("../img/texture-l2.jpg") no-repeat center / cover, theme('colors.l2');
+
   @media (max-width: theme('screens.sm')) {
     padding-top   : 32px;
     padding-bottom: 32px;
+    background    : theme('colors.l2');
   }
 
   &-anchors {
@@ -331,6 +333,112 @@ body {
 
     @media (max-width: theme('screens.sm')) {
       padding: 20px 10px;
+    }
+  }
+}
+
+.categories {
+  padding-top   : 64px;
+  padding-bottom: 80px;
+
+  @media (max-width: theme('screens.md')) {
+    padding-top   : 32px;
+    padding-bottom: 32px;
+  }
+
+  &-item {
+    border-radius: 16px;
+    overflow     : hidden;
+
+    &-content {
+      padding: 24px;
+
+      @media (max-width: theme('screens.sm')) {
+        padding: 16px 8px;
+      }
+    }
+  }
+}
+
+.who {
+  background    : url("../img/texture-primary.jpg") no-repeat center / cover, theme('colors.primary');
+  color         : #fff;
+  padding-top   : 64px;
+  padding-bottom: 80px;
+
+  @media (max-width: theme('screens.md')) {
+    padding-top   : 32px;
+    padding-bottom: 32px;
+  }
+
+  &-block {
+    background   : theme('colors.l3');
+    color        : theme('colors.default');
+    border-radius: 16px;
+    overflow     : hidden;
+  }
+}
+
+.how {
+  background    : url("../img/texture-l2.jpg") no-repeat center / cover, theme('colors.l2');
+  padding-top   : 72px;
+  padding-bottom: 72px;
+
+  @media (max-width: theme('screens.md')) {
+    padding-top   : 32px;
+    padding-bottom: 32px;
+  }
+
+  &-block {
+    background   : theme('colors.l3');
+    border-radius: 16px;
+    overflow     : hidden;
+  }
+}
+
+.support {
+  padding-top   : 64px;
+  padding-bottom: 72px;
+
+  @media (max-width: theme('screens.md')) {
+    padding-top   : 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.partner {
+  background    : url("../img/texture-l2.jpg") no-repeat center / cover, theme('colors.l2');
+  padding-top   : 64px;
+  padding-bottom: 72px;
+
+  @media (max-width: theme('screens.md')) {
+    padding-top   : 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.news {
+  padding-top   : 64px;
+  padding-bottom: 72px;
+
+  @media (max-width: theme('screens.md')) {
+    padding-top   : 32px;
+    padding-bottom: 32px;
+  }
+
+  &-item {
+    background    : theme('colors.l3');
+    border        : 1px solid theme('colors.default / 10%');
+    border-radius : 16px;
+    overflow      : hidden;
+    display       : flex;
+    flex-direction: column;
+
+    &-content {
+      flex-grow     : 1;
+      display       : flex;
+      flex-direction: column;
+      align-items   : start;
     }
   }
 }
