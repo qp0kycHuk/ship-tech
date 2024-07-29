@@ -13,3 +13,67 @@
 </head>
 
 <body class="scroll-top">
+
+  <header class="header">
+    <div class="flex items-center gap-3 sm:gap-6">
+      <button class="btn btn-text  relative lg:hidden" data-toggle-link="menu">
+        <div class="absolute -inset-3"></div>
+        <c-icon class="icon text-2xl" href="img/icons.svg#menu"></c-icon>
+      </button>
+
+      <img src="/img/logo.svg" alt="" class="header-logo">
+      <img src="/img/ship-logo.svg" alt="" class="header-logo">
+    </div>
+
+    <div class="flex items-center gap-12 max-lg:hidden">
+      <%= require('./nav-items.html')() %>
+    </div>
+
+    <%= require('./lang-select.html')() %>
+
+    <a href="javascript:;" class="btn btn-text  relative sm:hidden">
+      <div class="absolute -inset-3"></div>
+      <c-icon class="icon text-2xl" href="/img/icons.svg#phone"></c-icon>
+    </a>
+    <a href="javascript:;" class="btn btn-text hover-underline relative max-sm:hidden">
+      <div class="absolute -inset-6"></div>
+      <span class="font-extrabold md:text-xl">+7 900 000-00-00</span>
+    </a>
+  </header>
+
+  <div class="menu" id="menu">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-3 sm:gap-6">
+        <button class="btn btn-text  relative" data-toggle-link="menu">
+          <div class="absolute -inset-3"></div>
+          <c-icon class="icon text-2xl" href="/img/icons.svg#circle-cross"></c-icon>
+        </button>
+
+        <img src="/img/logo-color.svg" alt="" class="header-logo">
+        <img src="/img/ship-logo-color.svg" alt="" class="header-logo">
+      </div>
+
+      <%= require('./lang-select.html')() %>
+    </div>
+    <div class="flex flex-col gap-7 mt-7">
+      <%= require('./nav-items.html')() %>
+
+    </div>
+
+    <div class="mt-6"></div>
+    <div class="mt-auto">
+      <a href="javascript:;" class="btn btn-text hover-underline relative justify-start mb-2">
+        <div class="absolute -inset-6"></div>
+        <span class="">event@rusfishexpo.com </span>
+      </a>
+      <a href="javascript:;" class="btn btn-text hover-underline relative justify-start">
+        <div class="absolute -inset-6"></div>
+        <span class="font-semibold text-xl">+7 (495) 215-06-75</span>
+      </a>
+      <a href="javascript:;" class="btn btn-text hover-underline relative justify-start">
+        <div class="absolute -inset-6"></div>
+        <span class="font-semibold text-xl">+7 (495) 215-06-75</span>
+      </a>
+    </div>
+  </div>
+  <div class="menu-shadow"></div>
