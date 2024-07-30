@@ -5,7 +5,7 @@
   // theme colors
   --primary-rgb : #{cl(#002E65)};
   --sec-rgb     : #{cl(#D8E037)};
-  --blue-rgb    : #{cl(#2173E5)};
+  --blue-rgb    : #{cl(#3DAEE3)};
   --red-rgb     : #{cl(#c0392b)};
   --green-rgb   : #{cl(#27ae60)};
   --yellow-rgb  : #{cl(#FECB29)};
@@ -439,6 +439,28 @@ body {
       display       : flex;
       flex-direction: column;
       align-items   : start;
+    }
+  }
+}
+
+.programm {
+  background    : url("../img/texture-l2.jpg") repeat-y top / 100% auto, theme('colors.l2');
+  padding-top   : 64px;
+  padding-bottom: 72px;
+
+  @media (max-width: theme('screens.md')) {
+    padding-top   : 32px;
+    padding-bottom: 32px;
+  }
+
+  &-item {
+    background   : theme('colors.l3');
+    border-radius: 16px;
+    box-shadow   : 0 4px 18px 0 rgba(0, 0, 0, 0.05);
+    padding      : 32px;
+
+    @media (max-width: theme('screens.md')) {
+      padding: 24px 16px;
     }
   }
 }
