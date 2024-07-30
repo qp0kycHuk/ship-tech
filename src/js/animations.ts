@@ -1,7 +1,7 @@
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-const gsapAnimation: Record<string, any> = {
+const gsapAnimation: Record<string, gsap.TweenVars> = {
   fadeInLeft: {
     from: { x: '-75', opacity: 0 },
     to: { x: 0, opacity: 1 },
@@ -68,7 +68,7 @@ function scrollInit() {
 
   scrollElements.forEach((element) => {
     const key = element.getAttribute('data-animation')
-    const duration = element.getAttribute('data-duration') || 2
+    const duration = element.getAttribute('data-duration') || 1.25
     const end = element.getAttribute('data-end') || 'bottom -10%'
     const start = element.getAttribute('data-start') || 'top 110%'
     const delay = 0.25 + parseFloat(element.getAttribute('data-delay') || '0')

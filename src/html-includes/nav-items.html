@@ -5,34 +5,46 @@
     <c-icon class="icon opacity-70 group-[.active]:-rotate-90 text-xs" href="/img/icons.svg#to-right"></c-icon>
   </c-menu-button>
   <c-menu-items class="p-2 max-md:py-6 w-64">
-    <a href="javascript:;" class="btn btn-xs btn-primary rounded-md px-2">
-      <span class="font-normal w-full text-default">Описание</span>
-    </a>
-    <a href="javascript:;" class="btn btn-xs btn-primary rounded-md px-2">
-      <span class="font-normal w-full text-default">Участники мероприятия</span>
-    </a>
-    <a href="javascript:;" class="btn btn-xs btn-primary rounded-md px-2">
-      <span class="font-normal w-full text-default">Деловая программа</span>
-    </a>
-    <a href="javascript:;" class="btn btn-xs btn-primary rounded-md px-2">
-      <span class="font-normal w-full text-default">Новости</span>
-    </a>
-    <a href="javascript:;" class="btn btn-xs btn-primary rounded-md px-2">
-      <span class="font-normal w-full text-default">Место проведения</span>
-    </a>
+    <c-menu-item>
+      <a href="/#about" data-scroll class="btn btn-xs btn-primary rounded-md px-2" data-toggle-link>
+        <span class="font-normal w-full text-default">Описание</span>
+      </a>
+    </c-menu-item>
+    <c-menu-item>
+      <a href="/#who" data-scroll class="btn btn-xs btn-primary rounded-md px-2" data-toggle-link>
+        <span class="font-normal w-full text-default">Участники мероприятия</span>
+      </a>
+    </c-menu-item>
+    <c-menu-item>
+      <a href="/#programm" data-scroll class="btn btn-xs btn-primary rounded-md px-2" data-toggle-link>
+        <span class="font-normal w-full text-default">Деловая программа</span>
+      </a>
+    </c-menu-item>
+    <c-menu-item>
+      <a href="/#news" data-scroll class="btn btn-xs btn-primary rounded-md px-2" data-toggle-link>
+        <span class="font-normal w-full text-default">Новости</span>
+      </a>
+    </c-menu-item>
+    <c-menu-item>
+      <a href="/#place" data-scroll class="btn btn-xs btn-primary rounded-md px-2" data-toggle-link>
+        <span class="font-normal w-full text-default">Место проведения</span>
+      </a>
+    </c-menu-item>
     <a href="javascript:;" class="btn btn-xs btn-primary rounded-md px-2">
       <span class="font-normal w-full text-default">Регистрация</span>
     </a>
-    <a href="javascript:;" class="btn btn-xs btn-primary rounded-md px-2">
-      <span class="font-normal w-full text-default">Контакты</span>
-    </a>
+    <c-menu-item>
+      <a href="/#contacts" data-scroll class="btn btn-xs btn-primary rounded-md px-2" data-toggle-link>
+        <span class="font-normal w-full text-default">Контакты</span>
+      </a>
+    </c-menu-item>
   </c-menu-items>
 </c-menu>
 <a href="javascript:;" class="btn btn-text hover-underline relative justify-start">
   <div class="absolute -inset-3 lg:-inset-6"></div>
   <span class="opacity-70">Регистрация</span>
 </a>
-<a href="javascript:;" class="btn btn-text hover-underline relative justify-start">
+<a href="/#contacts" data-scroll class="btn btn-text hover-underline relative justify-start" data-toggle-link>
   <div class="absolute -inset-3 lg:-inset-6"></div>
   <span class="opacity-70">Контакты</span>
 </a>

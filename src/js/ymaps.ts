@@ -23,6 +23,7 @@ function mapsInit() {
       }
 
       const map = new maps.Map('contact-map', options)
+      const sizeImage = [74, 85]
 
       const placemark = new maps.Placemark(
         coords,
@@ -30,8 +31,8 @@ function mapsInit() {
         {
           iconLayout: 'default#image',
           iconImageHref: '/img/map-point.svg',
-          iconImageSize: [100, 100],
-          iconImageOffset: [-(100 / 2), -100],
+          iconImageSize: sizeImage,
+          iconImageOffset: [-1 * (sizeImage[0] / 2), -1 * sizeImage[1]],
           hasBalloon: true,
           openBalloonOnClick: true,
           hideIconOnBalloonOpen: false,
