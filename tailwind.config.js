@@ -1,6 +1,6 @@
 const elementsSizes = {
   xs: '32px',
-  sm: '40px',
+  sm: '42px',
   base: '56px',
   lg: '64px',
   xl: '72px',
@@ -50,19 +50,19 @@ module.exports = {
       default: withOpacity('--default-rgb'),
     },
     fontFamily: {
-      base: "'Inter', arial, helvetica, sans-serif",
+      base: '\'Inter\', arial, helvetica, sans-serif',
     },
     zIndex: [0, 321, 322, 323, 324, 325, 326, 327, 328, 329, 'auto'],
     extend: {
       inputSize: elementsSizes,
       btnSize: elementsSizes,
       spacing: {
-        [4.5]: 4.5 * 4 / 16 + 'rem',
-        [12.5]: 12.5 * 4 / 16 + 'rem',
-        [15]: 15 * 4 / 16 + 'rem',
-        [18]: 18 * 4 / 16 + 'rem',
-        [30]: 30 * 4 / 16 + 'rem',
-        [65]: '16.25rem'
+        [4.5]: (4.5 * 4) / 16 + 'rem',
+        [12.5]: (12.5 * 4) / 16 + 'rem',
+        [15]: (15 * 4) / 16 + 'rem',
+        [18]: (18 * 4) / 16 + 'rem',
+        [30]: (30 * 4) / 16 + 'rem',
+        [65]: '16.25rem',
       },
       fontSize: {
         '2xs': [10 / 16 + 'rem', '1.35'],
@@ -74,25 +74,22 @@ module.exports = {
         '4.5xl': ['2.5rem', '1.35'],
       },
       boxShadow: {
-        base: '0 4px 18px 0 #0000000D'
-      }
-
+        base: '0 4px 18px 0 #0000000D',
+      },
     },
   },
   plugins: [
     require('@qpokychuk/tailwind-button-plugin'),
     require('@qpokychuk/tailwind-ratio-plugin'),
     require('@qpokychuk/tailwind-input-plugin')({
-      border: "1px solid theme('colors.default / 40%')",
+      border: '1px solid theme(\'colors.default / 40%\')',
     }),
     require('@qpokychuk/tailwind-checkbox-plugin')({
-      border: "1px solid theme('colors.default / 40%')",
+      border: '1px solid theme(\'colors.default / 40%\')',
     }),
     require('tailwindcss-border-styles')(),
   ],
 }
-
-
 
 function withOpacity(variableName) {
   return ({ opacityValue }) => {

@@ -1,0 +1,110 @@
+<%= require('./html-includes/header.html')() %>
+<!--  -->
+<%= require('./html-includes/page-top.html')() %>
+
+<section class="p-section bg-l3">
+  <div class="flex gap-4 mb-12 max-md:flex-col">
+    <div>
+      <div class="mb-2 text-sm font-medium">Популярные темы</div>
+      <div class="flex flex-wrap gap-2">
+        <% for(let i = 0; i < 3; i++) { %>
+        <a
+          href="javascript:;"
+          class="btn btn-sm rounded-full btn-primary <%= i === 0 ? 'btn-fill' : 'btn-contur border-default/20' %>"
+        >
+          <span class="font-normal">#важное</span>
+        </a>
+        <% } %>
+      </div>
+    </div>
+    <div class="md:w-1/2 md:ml-auto">
+      <div class="mb-2 text-sm font-medium">Поиск по темам</div>
+      <c-menu>
+        <div class="relative">
+          <c-menu-button
+            class="justify-start w-full px-4 cursor-pointer rounded-xl btn btn-sm btn-contur btn-primary border-default/20"
+          >
+            <div class="text-sm text-left">Важно, Рыба</div>
+            <c-icon
+              class="absolute -translate-y-1/2 icon right-4 top-1/2 group-[.active]:-rotate-90"
+              href="img/icons.svg#to-right"
+            ></c-icon>
+          </c-menu-button>
+          <div class="absolute -translate-y-1/2 right-12 top-1/2">
+            <a href="javascript:;" class="btn btn-text btn-black">
+              <c-icon class="text-xs icon" href="img/icons.svg#cross"></c-icon>
+            </a>
+          </div>
+        </div>
+        <c-menu-items class="w-full" placement="bottom">
+          <div class="p-4">
+            <div class="mb-5 text-lg font-medium">О мероприятии</div>
+            <div class="flex flex-col gap-3">
+              <label class="flex items-start gap-3 cursor-pointer form-field">
+                <input type="checkbox" checked class="rounded-lg checkbox" />
+                <div class="">Важно</div>
+              </label>
+              <label class="flex items-start gap-3 cursor-pointer form-field">
+                <input type="checkbox" class="rounded-lg checkbox" />
+                <div class="">Тренды</div>
+              </label>
+              <label class="flex items-start gap-3 cursor-pointer form-field">
+                <input type="checkbox" class="rounded-lg checkbox" />
+                <div class="">Выставка</div>
+              </label>
+            </div>
+            <div class="mb-5 text-lg font-medium mt-7">Выставочные секторы</div>
+            <div class="flex flex-col gap-3">
+              <label class="flex items-start gap-3 cursor-pointer form-field">
+                <input type="checkbox" checked class="rounded-lg checkbox" />
+                <div class="">Рыба</div>
+              </label>
+              <label class="flex items-start gap-3 cursor-pointer form-field">
+                <input type="checkbox" class="rounded-lg checkbox" />
+                <div class="">Рыба</div>
+              </label>
+              <label class="flex items-start gap-3 cursor-pointer form-field">
+                <input type="checkbox" class="rounded-lg checkbox" />
+                <div class="">Рыба</div>
+              </label>
+            </div>
+          </div>
+        </c-menu-items>
+      </c-menu>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 sm:gap-7">
+    <% for(let i = 0; i < 10; i++) { %>
+    <div class="h-full news-item">
+      <div class="ratio ratio-[285/214]">
+        <img src="img/test.gif" alt="" class="object-cover absolute-fit" />
+      </div>
+      <div class="p-2 py-4 lg:p-6 news-item-content">
+        <div class="mb-3 opacity-70 max-sm:text-sm">21.06.2024</div>
+        <div class="mb-3 font-bold sm:text-xl">Открытие SHIP TECH GLOBAL в Экспофорум</div>
+        <div class="line-clamp-3 opacity-70 max-lg:text-sm">
+          Проект выставочной команды Expo Solutions Group – организатора выставки Seafood Проект выставочной команды
+          Expo Solutions Group – организатора выставки Seafo...
+        </div>
+        <div class="mt-8"></div>
+        <button class="mt-auto btn btn-primary btn-fill max-sm:w-full max-sm:px-1">Подробнее</button>
+      </div>
+    </div>
+    <% } %>
+  </div>
+  <div class="flex gap-4 mt-8 max-sm:hidden">
+    <button class="rounded-xl btn btn-primary btn-icon btn-contur border-default/10">
+      <c-icon class="icon" href="/img/icons.svg#to-left"></c-icon>
+    </button>
+    <button class="rounded-xl btn btn-primary btn-icon btn-fill">1</button>
+    <button class="rounded-xl btn btn-primary btn-icon btn-contur border-default/10">2</button>
+    <button class="rounded-xl btn btn-primary btn-icon btn-contur border-default/10">3</button>
+    <button class="rounded-xl btn btn-primary btn-icon btn-contur border-default/10">4</button>
+    <button class="rounded-xl btn btn-primary btn-icon btn-contur border-default/10">
+      <c-icon class="icon" href="/img/icons.svg#to-right"></c-icon>
+    </button>
+  </div>
+</section>
+
+<%= require('./html-includes/footer.html')() %>

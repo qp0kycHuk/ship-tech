@@ -519,6 +519,7 @@ body {
   justify-content: space-between;
   padding-top    : 32px;
   padding-bottom : 40px;
+  margin-top     : auto;
 
   @media (max-width: theme('screens.lg')) {
     flex-direction: column;
@@ -584,4 +585,26 @@ body {
       max-height: 290px;
     }
   }
+}
+
+.page-top {
+  min-height : 300px;
+  padding-top: 148px;
+  background : theme('colors.primary');
+  color      : #fff;
+
+  @media (max-width: theme('screens.sm')) {
+    min-height : 216px;
+    padding-top: 115px;
+  }
+}
+
+.registration {
+  padding-top   : 48px;
+  padding-bottom: 72px;
+}
+
+.p-section {
+  padding-top   : 48px;
+  padding-bottom: 72px;
 }

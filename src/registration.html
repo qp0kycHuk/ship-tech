@@ -1,0 +1,114 @@
+<%= require('./html-includes/header.html')() %>
+<!--  -->
+<%= require('./html-includes/page-top.html')() %>
+
+<section class="registration bg-l3 grow">
+  <div class="text-1.5xl font-semibold mb-6">Личные данные</div>
+
+  <div class="grid md:grid-cols-2 gap-y-5 gap-x-8">
+    <label class="block">
+      <div class="mb-2 text-sm font-semibold"><span class="text-red">*</span>Имя</div>
+      <input type="text" class="w-full py-0 text-sm rounded-lg input input-sm" />
+    </label>
+    <label class="block">
+      <div class="mb-2 text-sm font-semibold"><span class="text-red">*</span>Имя на английском языке</div>
+      <input type="text" class="w-full py-0 text-sm rounded-lg input input-sm" />
+    </label>
+
+    <label class="block">
+      <div class="mb-2 text-sm font-semibold"><span class="text-red">*</span>Фамилия</div>
+      <input type="text" class="w-full py-0 text-sm rounded-lg input input-sm" />
+    </label>
+    <label class="block">
+      <div class="mb-2 text-sm font-semibold"><span class="text-red">*</span>Фамилия (на английском языке)</div>
+      <input type="text" class="w-full py-0 text-sm rounded-lg input input-sm" />
+    </label>
+
+    <label class="block">
+      <div class="mb-2 text-sm font-semibold">Отчество</div>
+      <input type="text" class="w-full py-0 text-sm rounded-lg input input-sm" />
+    </label>
+    <label class="block">
+      <div class="mb-2 text-sm font-semibold"><span class="text-red">*</span>Должность</div>
+      <input type="text" class="w-full py-0 text-sm rounded-lg input input-sm" />
+    </label>
+
+    <label class="block">
+      <div class="mb-2 text-sm font-semibold"><span class="text-red">*</span>Электронная почта</div>
+      <input type="email" class="w-full py-0 text-sm rounded-lg input input-sm" />
+    </label>
+    <label class="block">
+      <div class="mb-2 text-sm font-semibold"><span class="text-red">*</span>Телефон</div>
+      <input type="tel" class="w-full py-0 text-sm rounded-lg input input-sm" />
+    </label>
+  </div>
+
+  <div class="text-1.5xl font-semibold mb-6">Информация о компании</div>
+  <div class="grid md:grid-cols-2 gap-y-5 gap-x-8">
+    <label class="block col-span-full">
+      <div class="mb-2 text-sm font-semibold"><span class="text-red">*</span>Название компании</div>
+      <input type="text" class="w-full py-0 text-sm rounded-lg input input-sm" />
+    </label>
+    <label class="block col-span-full">
+      <div class="mb-2 text-sm font-semibold">
+        <span class="text-red">*</span>*Название компании (на английском языке)
+      </div>
+      <input type="text" class="w-full py-0 text-sm rounded-lg input input-sm" />
+    </label>
+
+    <label class="block">
+      <div class="mb-2 text-sm font-semibold">Адрес сайта</div>
+      <input type="text" class="w-full py-0 text-sm rounded-lg input input-sm" />
+    </label>
+    <div></div>
+    <label class="block">
+      <div class="mb-2 text-sm font-semibold"><span class="text-red">*</span>Страна</div>
+      <select class="w-full py-0 text-sm rounded-lg input input-sm">
+        <option value="">Страна 1</option>
+        <option value="">Страна 2</option>
+      </select>
+    </label>
+    <label class="block">
+      <div class="mb-2 text-sm font-semibold"><span class="text-red">*</span>Город</div>
+      <input type="text" class="w-full py-0 text-sm rounded-lg input input-sm" />
+    </label>
+    <label class="block col-span-full">
+      <div class="mb-2 text-sm font-semibold"><span class="text-red">*</span>Основная сфера деятельности компании</div>
+      <select class="w-full py-0 text-sm rounded-lg input input-sm">
+        <option value="">Выберите деятельность</option>
+        <option value="">Выберите деятельность</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="flex flex-col gap-4 mt-9">
+    <label class="flex gap-3">
+      <input type="checkbox" class="rounded-lg checkbox shrink-0" />
+      <div class="self-center text-xs opacity-70">
+        Даю согласие на получение рассылки информационного характера от организаторов
+      </div>
+    </label>
+    <label class="flex gap-3">
+      <input type="checkbox" class="rounded-lg checkbox shrink-0" />
+      <div class="self-center text-xs opacity-70">
+        Подтверждаю, что персональные данные, указанные мной в настоящей форме, полностью соответствуют Федеральному
+        закону «О персональных данных» от 27 июля 2006 г. № 152-ФЗ, а также выражаю свое согласие на их обработку,
+        хранение и передачу (в том числе посредством поручения такой обработки специализированной организации).
+      </div>
+    </label>
+    <label class="flex gap-3">
+      <input type="checkbox" class="rounded-lg checkbox shrink-0" />
+      <div class="self-center text-xs opacity-70">
+        Выражаю согласие с тем, что при посещении Ship Tech Global возможно проведение фото- и видеосъемки, а также
+        создание аудиозаписи с моим участием. При этом организатор оставляет за собой право использовать полученные
+        фото- и видеоматериалы, аудиозаписи, сделанные во время мероприятия, без моего письменного согласия на
+        использование фото- и видеосъемки, аудиозаписей с моим участием в публикациях и медиа-материалах включая, но не
+        ограничиваясь публикациями в интернете, социальных сетях, новостях, пресс-релизах, брошюрах, приглашениях и
+        других рекламных материалах.
+      </div>
+    </label>
+  </div>
+  <button class="mt-9 btn btn-primary btn-fill">Зарегистрироваться</button>
+</section>
+
+<%= require('./html-includes/footer.html')() %>
