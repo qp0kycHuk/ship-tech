@@ -1,24 +1,24 @@
 <%= require('./html-includes/header.html')() %>
 
 <section class="started">
-  <img src="img/started-texture.jpg" alt="" class="absolute-fit object-cover" />
   <div class="started-background absolute-fit">
+    <img src="img/started-texture.jpg" alt="" class="object-cover absolute-fit" />
     <img
       src="img/started-lines-left.svg"
       alt=""
-      class="absolute-fit object-cover object-left-top max-md:hidden"
+      class="object-cover object-left-top absolute-fit max-md:hidden"
       loading="lazy"
     />
     <img
       src="img/started-lines-right.svg"
       alt=""
-      class="absolute-fit object-cover object-right-top max-md:hidden"
+      class="object-cover object-right-top absolute-fit max-md:hidden"
       loading="lazy"
     />
     <img
       src="img/started-lines-sm.svg"
       alt=""
-      class="absolute-fit object-contain object-right-top md:hidden"
+      class="object-contain object-right-top absolute-fit md:hidden"
       loading="lazy"
     />
   </div>
@@ -32,7 +32,7 @@
       <div class="radar-screen">
         <img src="/img/radar-lines.svg" alt="" class="radar-lines" />
 
-        <!-- <div class="absolute left-20 top-1/4 md:text-7xl font-bold">Х У Й</div> -->
+        <!-- <div class="absolute font-bold left-20 top-1/4 md:text-7xl">Х У Й</div> -->
 
         <!-- <img src="/img/test.gif" alt="" class="absolute top-36 right-40 w-28" /> -->
       </div>
@@ -49,15 +49,15 @@
       СУДОСТРОЕНИЯ, СУДОРЕМОНТА, ОБОРУДОВАНИЯ <br class="max-sm:hidden" />
       И ПОРТОВОЙ ИНФРАСТРУКТУРЫ
     </div>
-    <div class="started-date mt-6 sm:mt-12" data-animation="fadeInUp" data-delay="0.25">
-      <div class="flex items-center bg-white text-primary px-8 py-5 gap-4">
+    <div class="mt-6 started-date sm:mt-12" data-animation="fadeInUp" data-delay="0.25">
+      <div class="flex items-center gap-4 px-8 py-5 bg-white text-primary">
         <c-icon class="icon text-3.5xl" href="img/icons.svg#calendar"></c-icon>
-        <div class="uppercase text-xl md:text-3xl font-bold">17-19 сентября 2024</div>
+        <div class="text-xl font-bold uppercase md:text-3xl">17-19 сентября 2024</div>
       </div>
-      <div class="uppercase p-4 font-bold max-md:text-sm">Санкт-Петербург, КВЦ «ЭКСПОФОРУМ»</div>
+      <div class="p-4 font-bold uppercase max-md:text-sm">Санкт-Петербург, КВЦ «ЭКСПОФОРУМ»</div>
     </div>
     <div data-animation="fadeInUp" data-delay="0.3">
-      <button class="btn btn-sec btn-fill gap-2 text-black mt-6 sm:mt-12">
+      <button class="gap-2 mt-6 text-black btn btn-sec btn-fill sm:mt-12">
         <c-icon class="icon text-1.5xl" href="img/icons.svg#anchor"></c-icon>
         Забронировать стенд
       </button>
@@ -65,16 +65,16 @@
   </div>
 </section>
 
-<section class="sign relative">
+<section class="relative sign">
   <img src="img/sign-lines.png" alt="" class="absolute-fit opacity-30" />
-  <img src="img/ship-logo.svg" alt="" class="w-8 h-6 sm:h-7 sm:w-10 relative" />
-  <div class="font-semibold relative max-sm:text-2xs">В рамках Global Fishery Forum & Seafood Expo Russia</div>
+  <img src="img/ship-logo.svg" alt="" class="relative w-8 h-6 sm:h-7 sm:w-10" />
+  <div class="relative font-semibold max-sm:text-2xs">В рамках Global Fishery Forum & Seafood Expo Russia</div>
 </section>
 
 <!-- о мероприятии -->
 <section class="about bg-l3" id="about">
   <div>
-    <div class="title mb-6 sm:mb-10" data-animation="fadeInUp">о мероприятии</div>
+    <div class="mb-6 title sm:mb-10" data-animation="fadeInUp">о мероприятии</div>
     <div class="leading-normal max-lg:text-sm" data-animation="fadeInUp">
       <b>
         SHIP TECH GLOBAL – проект выставочной команды Expo Solutions Group – организатора выставки Seafood Expo Russia.
@@ -85,33 +85,33 @@
       в реальных заказах и росте бизнеса компаний, позволили расширить тематику и предложить аналогичный подход к
       сотрудничеству и налаживанию новых взаимовыгодных связей для всей индустрии гражданского судостроения.
     </div>
-    <div class="about-jigurda mt-10 relative" data-animation="fadeInUp">
-      <img src="img/about-jigurda.png" alt="" class="absolute-fit object-right-top" />
+    <div class="relative mt-10 about-jigurda" data-animation="fadeInUp">
+      <img src="img/about-jigurda.png" alt="" class="object-right-top absolute-fit" />
       <div class="relative">
         <div class="font-semibold max-sm:text-sm">
           SHIP TECH GLOBAL – новое место встречи всех представителей индустрии гражданского судостроения, судоремонта и
           портовой инфраструктуры
         </div>
-        <button class="btn btn-sec btn-fill gap-2 text-black mt-6">
+        <button class="gap-2 mt-6 text-black btn btn-sec btn-fill">
           <c-icon class="icon text-1.5xl" href="img/icons.svg#anchor"></c-icon>
           Забронировать стенд
         </button>
       </div>
     </div>
   </div>
-  <div class="ratio ratio-1/1 rounded-2xl overflow-hidden" data-animation="fadeInUp">
-    <img src="img/test.gif" alt="" class="absolute-fit object-cover" />
-    <div class="h-3 absolute left-0 bottom-0 w-full bg-sec"></div>
+  <div class="overflow-hidden ratio ratio-1/1 rounded-2xl" data-animation="fadeInUp">
+    <img src="img/test.gif" alt="" class="object-cover absolute-fit" />
+    <div class="absolute bottom-0 left-0 w-full h-3 bg-sec"></div>
   </div>
 </section>
 
-<!-- SHIP TECH GLOBAL - это -->
+<!-- SHIP TECH GLOBAL - это -->
 <section class="this">
-  <div class="title sm:text-center mb-6 sm:mb-10" data-animation="fadeInUp">SHIP TECH GLOBAL - это</div>
+  <div class="mb-6 title sm:text-center sm:mb-10" data-animation="fadeInUp">SHIP TECH GLOBAL - это</div>
   <div class="grid lg:grid-cols-2 gap-2.5">
     <% for(let i = 0; i < 4; i++) { %>
-    <div class="shadow-base p-2 flex gap-6 items-center bg-l3 rounded-2xl" data-animation="fadeInUp">
-      <div class="h-16 sm:h-20 w-24 sm:w-40 bg-primary/10 rounded-xl flex">
+    <div class="flex items-center gap-6 p-2 shadow-base bg-l3 rounded-2xl" data-animation="fadeInUp">
+      <div class="flex w-24 h-16 sm:h-20 sm:w-40 bg-primary/10 rounded-xl">
         <div class="font-black text-xl sm:text-3.5xl m-auto text-primary">200+</div>
       </div>
       <div class="font-semibold max-sm:text-sm">российских и зарубежных компаний</div>
@@ -123,8 +123,8 @@
       <div class="flex flex-col gap-5 sm:gap-7">
         <% for(let i = 0; i < 4; i++) { %>
         <div class="flex items-center gap-2 sm:gap-5">
-          <div class="size-10 flex bg-sec rounded-lg shrink-0 text-black">
-            <c-icon class="icon text-lg m-auto" href="img/icons.svg#anchor"></c-icon>
+          <div class="flex text-black rounded-lg size-10 bg-sec shrink-0">
+            <c-icon class="m-auto text-lg icon" href="img/icons.svg#anchor"></c-icon>
           </div>
           <div class="max-sm:text-sm"><b>Уникальная аудитория</b> судовладельцев и поставщиков и судостроителей</div>
         </div>
@@ -132,20 +132,20 @@
       </div>
     </div>
     <div class="ratio ratio-[610/352] rounded-2xl overflow-hidden" data-animation="fadeInUp">
-      <img src="img/test.gif" alt="" class="absolute-fit object-cover" />
-      <div class="h-2 absolute left-0 bottom-0 w-full bg-sec"></div>
+      <img src="img/test.gif" alt="" class="object-cover absolute-fit" />
+      <div class="absolute bottom-0 left-0 w-full h-2 bg-sec"></div>
     </div>
   </div>
 </section>
 
 <!-- ДЛЯ КаКОГО СЕКТОРА -->
 <section class="categories bg-l3">
-  <div class="title text-center mb-6 sm:mb-10" data-animation="fadeInUp">ДЛЯ КаКОГО СЕКТОРА</div>
+  <div class="mb-6 text-center title sm:mb-10" data-animation="fadeInUp">ДЛЯ КаКОГО СЕКТОРА</div>
 
-  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-5">
+  <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5 sm:gap-5">
     <% for(let i = 0; i < 5; i++) { %>
     <div class="categories-item ratio ratio-[230/310]" data-animation="fadeInUp">
-      <img src="img/test.gif" alt="" class="absolute-fit object-cover" />
+      <img src="img/test.gif" alt="" class="object-cover absolute-fit" />
       <div class="categories-item-content absolute-fit">
         <div class="text-xl font-semibold <%= i % 2 == 0 ? 'text-black' : 'text-white' %> max-sm:text-sm">Верфи</div>
       </div>
@@ -156,39 +156,39 @@
 
 <!-- для кого -->
 <section class="who" id="who">
-  <div class="title sm:text-center mb-6 sm:mb-10" data-animation="fadeInUp">для кого</div>
+  <div class="mb-6 title sm:text-center sm:mb-10" data-animation="fadeInUp">для кого</div>
 
-  <div class="who-block grid lg:grid-cols-2" data-animation="fadeInUp">
-    <div class="sm:p-12 py-6 px-4">
-      <div class="text-lg sm:text-xl font-bold uppercase mb-3 sm:mb-6">
+  <div class="grid who-block lg:grid-cols-2" data-animation="fadeInUp">
+    <div class="px-4 py-6 sm:p-12">
+      <div class="mb-3 text-lg font-bold uppercase sm:text-xl sm:mb-6">
         Участники процесса <br />
         реализации заказа
       </div>
-      <div class="max-sm:text-sm mb-6">
+      <div class="mb-6 max-sm:text-sm">
         мероприятие будет полезно специалистам, занятым в различного рода процессах, связанных с ремонтом судов,
         проектированием, финансовым обеспечением и так далее
       </div>
       <div class="flex flex-col divide-y divide-dashed divide-default/10">
         <% for(let i = 0; i < 7; i++) { %>
         <div class="flex items-center gap-3 py-2 sm:py-4">
-          <c-icon class="icon text-2xl text-sec" href="img/icons.svg#circle-check"></c-icon>
+          <c-icon class="text-2xl icon text-sec" href="img/icons.svg#circle-check"></c-icon>
           <div class="max-sm:text-sm">Судостроительные и судоремонтные заводы</div>
         </div>
         <% } %>
       </div>
     </div>
     <div class="ratio ratio-[343/387]">
-      <img src="img/test.gif" alt="" class="absolute-fit object-cover" />
+      <img src="img/test.gif" alt="" class="object-cover absolute-fit" />
     </div>
   </div>
 </section>
 
 <!-- как это будет -->
 <section class="how">
-  <div class="title mb-6 sm:mb-8 sm:hidden" data-animation="fadeInUp">как это будет</div>
-  <div class="how-block grid lg:grid-cols-2 relative" data-animation="fadeInUp">
-    <div class="sm:p-12 py-6 px-4">
-      <div class="title mb-6 sm:mb-8 max-sm:hidden">как это будет</div>
+  <div class="mb-6 title sm:mb-8 sm:hidden" data-animation="fadeInUp">как это будет</div>
+  <div class="relative grid how-block lg:grid-cols-2" data-animation="fadeInUp">
+    <div class="px-4 py-6 sm:p-12">
+      <div class="mb-6 title sm:mb-8 max-sm:hidden">как это будет</div>
       <div class="max-sm:text-sm">
         <b>Экспозиция SHIP TECH GLOBAL расположится на одной площадке с выставкой Seafood Expo Russia.</b>
         <br /><br />
@@ -199,20 +199,20 @@
       </div>
     </div>
     <div class="ratio ratio-[620/462]">
-      <img src="img/test.gif" alt="" class="absolute-fit object-cover" />
+      <img src="img/test.gif" alt="" class="object-cover absolute-fit" />
     </div>
-    <div class="h-2 absolute left-0 bottom-0 w-full bg-sec/60"></div>
+    <div class="absolute bottom-0 left-0 w-full h-2 bg-sec/60"></div>
   </div>
 </section>
 
 <!-- ПРИ ПОДДЕРЖКЕ -->
 <section class="support bg-l3">
-  <div class="title sm:text-center sm:mb-10 mb-6" data-animation="fadeInUp">ПРИ ПОДДЕРЖКЕ</div>
-  <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6" data-animation="fadeInUp">
+  <div class="mb-6 title sm:text-center sm:mb-10" data-animation="fadeInUp">ПРИ ПОДДЕРЖКЕ</div>
+  <div class="grid grid-cols-2 gap-3 lg:grid-cols-4 sm:gap-6" data-animation="fadeInUp">
     <% for(let i = 0; i < 4; i++) { %>
-    <div class="support-item p-5 rounded-2xl border border-default/10">
+    <div class="p-5 border support-item rounded-2xl border-default/10">
       <div class="ratio ratio-1/1">
-        <img src="img/support-sempl.png" alt="" class="absolute-fit object-scale-down" />
+        <img src="img/support-sempl.png" alt="" class="object-scale-down absolute-fit" />
       </div>
     </div>
     <% } %>
@@ -221,28 +221,28 @@
 
 <!-- деловая программа -->
 <section class="programm" id="programm">
-  <div class="title sm:text-center mb-6 sm:mb-10" data-animation="fadeInUp">деловая программа</div>
+  <div class="mb-6 title sm:text-center sm:mb-10" data-animation="fadeInUp">деловая программа</div>
 
   <div class="flex flex-col gap-4">
     <!-- Регистрация -->
     <div class="programm-item" data-animation="fadeInUp">
-      <div class="w-36 sm:w-44 h-10 border border-primary/50 rounded-full flex mb-3 sm:mb-4">
-        <span class="font-semibold m-auto text-primary">09:00 - 10:00</span>
+      <div class="flex h-10 mb-3 border rounded-full w-36 sm:w-44 border-primary/50 sm:mb-4">
+        <span class="m-auto font-semibold text-primary">09:00 - 10:00</span>
       </div>
       <div class="text-2xl sm:text-3.5xl font-semibold">Регистрация</div>
     </div>
     <!-- Открытие заседания -->
     <div class="programm-item" data-animation="fadeInUp">
-      <div class="w-36 sm:w-44 h-10 border border-primary/50 rounded-full flex mb-3 sm:mb-4">
-        <span class="font-semibold m-auto text-primary">09:00 - 10:00</span>
+      <div class="flex h-10 mb-3 border rounded-full w-36 sm:w-44 border-primary/50 sm:mb-4">
+        <span class="m-auto font-semibold text-primary">09:00 - 10:00</span>
       </div>
       <div class="text-2xl sm:text-3.5xl font-semibold">Открытие заседания</div>
       <div class="mt-6 group" data-toggle-cover>
-        <div class="font-semibold sm:text-xl mb-4 sm:mb-6">
+        <div class="mb-4 font-semibold sm:text-xl sm:mb-6">
           Пленарная сессия “Международная кооперация и инновации на рынке термочувствительных грузов”
         </div>
-        <div class="font-semibold mb-3">Ключевые вопросы:</div>
-        <ul class="list-disc pl-5 leading-loose">
+        <div class="mb-3 font-semibold">Ключевые вопросы:</div>
+        <ul class="pl-5 leading-loose list-disc">
           <li>Роль и место повестки продуктовой безопасности во внутренней и внешней политике России.</li>
           <li>Императивы развития перевозок скоропорта в новых экономических условиях.</li>
           <li>Государственные меры поддержки развития экспорта российской продукции АПК на рынки АТР и ЮВА.</li>
@@ -264,7 +264,7 @@
           <li class="active-enabled">Инвестиционные проекты в рыбной отрасли.</li>
         </ul>
 
-        <button class="btn btn-blue btn-text mt-6 gap-2 relative" data-toggle-link>
+        <button class="relative gap-2 mt-6 btn btn-blue btn-text" data-toggle-link>
           <div class="absolute -inset-4"></div>
           <span class="font-semibold active-disabled">Показать полностью</span>
           <span class="font-semibold active-enabled">Скрыть</span>
@@ -274,32 +274,32 @@
     </div>
     <!-- Перерыв -->
     <div class="programm-item" data-animation="fadeInUp">
-      <div class="w-36 sm:w-44 h-10 border border-primary/50 rounded-full flex mb-3 sm:mb-4">
-        <span class="font-semibold m-auto text-primary">09:00 - 10:00</span>
+      <div class="flex h-10 mb-3 border rounded-full w-36 sm:w-44 border-primary/50 sm:mb-4">
+        <span class="m-auto font-semibold text-primary">09:00 - 10:00</span>
       </div>
       <div class="text-2xl sm:text-3.5xl font-semibold">Перерыв</div>
     </div>
     <!-- Кейс-сессия -->
     <div class="programm-item" data-animation="fadeInUp">
-      <div class="flex gap-4 mb-3 sm:mb-4 flex-wrap max-sm:gap-x-1">
-        <div class="w-36 sm:w-44 h-10 border border-primary/50 rounded-full flex">
-          <span class="font-semibold m-auto text-primary">09:00 - 10:00</span>
+      <div class="flex flex-wrap gap-4 mb-3 sm:mb-4 max-sm:gap-x-1">
+        <div class="flex h-10 border rounded-full w-36 sm:w-44 border-primary/50">
+          <span class="m-auto font-semibold text-primary">09:00 - 10:00</span>
         </div>
-        <div class="px-5 sm:px-6 h-10 border border-default/20 rounded-full flex">
+        <div class="flex h-10 px-5 border rounded-full sm:px-6 border-default/20">
           <div class="m-auto">Конференц-зал</div>
         </div>
-        <div class="size-10 rounded-full bg-sec/15 flex">
-          <c-icon class="icon text-2xl text-sec m-auto" href="/img/icons.svg#star"></c-icon>
+        <div class="flex rounded-full size-10 bg-sec/15">
+          <c-icon class="m-auto text-2xl icon text-sec" href="/img/icons.svg#star"></c-icon>
         </div>
-        <div class="size-10 rounded-full border border-default/20 flex">
-          <c-icon class="icon text-2xl m-auto" href="/img/icons.svg#headphones"></c-icon>
+        <div class="flex border rounded-full size-10 border-default/20">
+          <c-icon class="m-auto text-2xl icon" href="/img/icons.svg#headphones"></c-icon>
         </div>
-        <div class="size-10 rounded-full border border-default/20 flex">
-          <c-icon class="icon text-2xl m-auto" href="/img/icons.svg#link"></c-icon>
+        <div class="flex border rounded-full size-10 border-default/20">
+          <c-icon class="m-auto text-2xl icon" href="/img/icons.svg#link"></c-icon>
         </div>
-        <div class="pr-6 pl-1 h-10 border border-default/20 rounded-full flex gap-3 items-center">
-          <div class="size-8 rounded-full bg-primary flex">
-            <c-icon class="icon text-2xl m-auto text-white" href="/img/icons.svg#online"></c-icon>
+        <div class="flex items-center h-10 gap-3 pl-1 pr-6 border rounded-full border-default/20">
+          <div class="flex rounded-full size-8 bg-primary">
+            <c-icon class="m-auto text-2xl text-white icon" href="/img/icons.svg#online"></c-icon>
           </div>
           <div class="m-auto">Online</div>
         </div>
@@ -309,8 +309,8 @@
       </div>
 
       <div class="mt-6 group" data-toggle-cover>
-        <div class="font-semibold mb-3">Ключевые вопросы:</div>
-        <ul class="list-disc pl-5 leading-loose">
+        <div class="mb-3 font-semibold">Ключевые вопросы:</div>
+        <ul class="pl-5 leading-loose list-disc">
           <li>Роль и место повестки продуктовой безопасности во внутренней и внешней политике России.</li>
           <li>Императивы развития перевозок скоропорта в новых экономических условиях.</li>
           <li>Государственные меры поддержки развития экспорта российской продукции АПК на рынки АТР и ЮВА.</li>
@@ -332,7 +332,7 @@
           <li class="active-enabled">Инвестиционные проекты в рыбной отрасли.</li>
         </ul>
 
-        <button class="btn btn-blue btn-text mt-6 gap-2" data-toggle-link>
+        <button class="gap-2 mt-6 btn btn-blue btn-text" data-toggle-link>
           <span class="font-semibold active-disabled">Показать полностью</span>
           <span class="font-semibold active-enabled">Скрыть</span>
           <c-icon class="icon rotate-90 group-[.toggle-active]:-rotate-90" href="/img/icons.svg#to-right"></c-icon>
@@ -340,12 +340,12 @@
       </div>
 
       <div class="mt-6">
-        <div class="text-xl font-semibold mb-4">Спикеры</div>
+        <div class="mb-4 text-xl font-semibold">Спикеры</div>
 
-        <div class="grid md:grid-cols-2 gap-6">
+        <div class="grid gap-6 md:grid-cols-2">
           <% for(let i = 0; i < 4; i++) { %>
           <div class="flex items-center gap-3">
-            <img src="img/test.gif" alt="" class="size-14 rounded-full object-cover" />
+            <img src="img/test.gif" alt="" class="object-cover rounded-full size-14" />
             <div>
               <div class="font-semibold max-sm:text-sm">Дмитрий Патрушев</div>
               <div class="text-sm opacity-60 max-sm:text-xs">Министр сельского хозяйства Российской Федерации</div>
@@ -355,11 +355,11 @@
         </div>
       </div>
       <div class="mt-6">
-        <div class="text-xl font-semibold mb-4">Модератор</div>
+        <div class="mb-4 text-xl font-semibold">Модератор</div>
 
-        <div class="grid md:grid-cols-2 gap-6">
+        <div class="grid gap-6 md:grid-cols-2">
           <div class="flex items-center gap-3">
-            <img src="img/test.gif" alt="" class="size-14 rounded-full object-cover" />
+            <img src="img/test.gif" alt="" class="object-cover rounded-full size-14" />
             <div>
               <div class="font-semibold max-sm:text-sm">Дмитрий Песков</div>
               <div class="text-sm opacity-60 max-sm:text-xs">Пресс-секретарь президента России</div>
@@ -367,26 +367,26 @@
           </div>
         </div>
       </div>
-      <div class="mt-6 flex md:flex-wrap gap-6 md:gap-14 max-md:flex-col">
+      <div class="flex gap-6 mt-6 md:flex-wrap md:gap-14 max-md:flex-col">
         <div>
-          <div class="text-xl font-semibold mb-4">Организаторы</div>
-          <div class="flex gap-4 flex-wrap max-md:grid grid-cols-2 sm:grid-cols-3">
+          <div class="mb-4 text-xl font-semibold">Организаторы</div>
+          <div class="flex flex-wrap grid-cols-2 gap-4 max-md:grid sm:grid-cols-3">
             <% for(let i = 0; i < 4; i++) { %>
-            <div class="support-item p-3 rounded-2xl border border-default/10 md:w-40">
+            <div class="p-3 border support-item rounded-2xl border-default/10 md:w-40">
               <div class="ratio ratio-4/3">
-                <img src="img/support-sempl.png" alt="" class="absolute-fit object-scale-down" />
+                <img src="img/support-sempl.png" alt="" class="object-scale-down absolute-fit" />
               </div>
             </div>
             <% } %>
           </div>
         </div>
         <div>
-          <div class="text-xl font-semibold mb-4">Информационные партнеры</div>
-          <div class="flex gap-4 flex-wrap max-md:grid grid-cols-2 sm:grid-cols-3">
+          <div class="mb-4 text-xl font-semibold">Информационные партнеры</div>
+          <div class="flex flex-wrap grid-cols-2 gap-4 max-md:grid sm:grid-cols-3">
             <% for(let i = 0; i < 2; i++) { %>
-            <div class="support-item p-3 rounded-2xl border border-default/10 md:w-40">
+            <div class="p-3 border support-item rounded-2xl border-default/10 md:w-40">
               <div class="ratio ratio-4/3">
-                <img src="img/support-sempl.png" alt="" class="absolute-fit object-scale-down" />
+                <img src="img/support-sempl.png" alt="" class="object-scale-down absolute-fit" />
               </div>
             </div>
             <% } %>
@@ -398,27 +398,27 @@
 </section>
 
 <!-- Новости -->
-<section class="news bg-l3 overflow-hidden" id="news">
-  <div class="title sm:text-center mb-6 sm:mb-10" data-animation="fadeInUp">Новости</div>
+<section class="overflow-hidden news bg-l3" id="news">
+  <div class="mb-6 title sm:text-center sm:mb-10" data-animation="fadeInUp">Новости</div>
 
   <div class="relative" data-animation="fadeInUp">
     <div class="news-slider swiper -mx-2 lg:-mx-3.5 max-md:overflow-visible">
       <div class="swiper-wrapper">
         <% for(let i = 0; i < 10; i++) { %>
         <div class="swiper-slide w-[300px] md:w-1/3 lg:w-1/4 px-2 lg:px-3.5">
-          <div class="news-item h-full">
+          <div class="h-full news-item">
             <div class="ratio ratio-[285/214]">
-              <img src="img/test.gif" alt="" class="absolute-fit object-cover" />
+              <img src="img/test.gif" alt="" class="object-cover absolute-fit" />
             </div>
-            <div class="p-4 lg:p-6 pt-4 news-item-content">
-              <div class="opacity-70 mb-3 max-sm:text-sm">21.06.2024</div>
-              <div class="sm:text-xl font-bold mb-3">Открытие SHIP TECH GLOBAL в Экспофорум</div>
+            <div class="p-4 pt-4 lg:p-6 news-item-content">
+              <div class="mb-3 opacity-70 max-sm:text-sm">21.06.2024</div>
+              <div class="mb-3 font-bold sm:text-xl">Открытие SHIP TECH GLOBAL в Экспофорум</div>
               <div class="line-clamp-3 opacity-70 max-lg:text-sm">
                 Проект выставочной команды Expo Solutions Group – организатора выставки Seafood Проект выставочной
                 команды Expo Solutions Group – организатора выставки Seafo...
               </div>
               <div class="mt-8"></div>
-              <button class="btn btn-primary btn-fill mt-auto">Подробнее</button>
+              <button class="mt-auto btn btn-primary btn-fill">Подробнее</button>
             </div>
           </div>
         </div>
@@ -427,19 +427,19 @@
     </div>
 
     <div class="absolute top-1/2 right-full -mr-2 z-[2] max-md:hidden">
-      <button class="btn btn-primary btn-whitebg btn-icon roundef-full shadow-lg news-slider-prev">
-        <c-icon class="icon text-2xl" href="img/icons.svg#to-left"></c-icon>
+      <button class="shadow-lg btn btn-primary btn-whitebg btn-icon roundef-full news-slider-prev">
+        <c-icon class="text-2xl icon" href="img/icons.svg#to-left"></c-icon>
       </button>
     </div>
 
     <div class="absolute top-1/2 left-full -ml-2 z-[2] max-md:hidden">
-      <button class="btn btn-primary btn-whitebg btn-icon roundef-full shadow-lg news-slider-next">
-        <c-icon class="icon text-2xl" href="img/icons.svg#to-right"></c-icon>
+      <button class="shadow-lg btn btn-primary btn-whitebg btn-icon roundef-full news-slider-next">
+        <c-icon class="text-2xl icon" href="img/icons.svg#to-right"></c-icon>
       </button>
     </div>
   </div>
   <div class="flex mt-8" data-animation="fadeInUp">
-    <a href="javascript:;" class="btn btn-primary btn-contur mx-auto max-sm:w-full">Все новости</a>
+    <a href="javascript:;" class="mx-auto btn btn-primary btn-contur max-sm:w-full">Все новости</a>
   </div>
 </section>
 <script>
@@ -454,51 +454,51 @@
 
 <!-- информационные партнеры -->
 <section class="partner bg-l3" data-toggle-cover>
-  <div class="title sm:text-center sm:mb-10 mb-6" data-animation="fadeInUp">информационные партнеры</div>
-  <div class="grid grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-5">
+  <div class="mb-6 title sm:text-center sm:mb-10" data-animation="fadeInUp">информационные партнеры</div>
+  <div class="grid grid-cols-2 gap-3 lg:grid-cols-5 sm:gap-5">
     <% for(let i = 0; i < 10; i++) { %>
     <div
       class="partner-item p-5 rounded-2xl bg-l3 shadow-base <%= i > 5 ? 'max-lg:active-enabled' : '' %>"
       data-animation="fadeInUp"
     >
       <div class="ratio ratio-1/1">
-        <img src="img/support-sempl.png" alt="" class="absolute-fit object-scale-down" />
+        <img src="img/support-sempl.png" alt="" class="object-scale-down absolute-fit" />
       </div>
     </div>
     <% } %> <% for(let i = 0; i < 10; i++) { %>
-    <div class="partner-item p-5 rounded-2xl bg-l3 shadow-base active-enabled" data-animation="fadeInUp">
+    <div class="p-5 partner-item rounded-2xl bg-l3 shadow-base active-enabled" data-animation="fadeInUp">
       <div class="ratio ratio-1/1">
-        <img src="img/support-sempl.png" alt="" class="absolute-fit object-scale-down" />
+        <img src="img/support-sempl.png" alt="" class="object-scale-down absolute-fit" />
       </div>
     </div>
     <% } %>
   </div>
   <div class="flex mt-8 active-disabled" data-animation="fadeInUp">
-    <a href="javascript:;" data-toggle-link class="btn btn-primary btn-fill mx-auto max-sm:w-full"> Все партнеры </a>
+    <a href="javascript:;" data-toggle-link class="mx-auto btn btn-primary btn-fill max-sm:w-full"> Все партнеры </a>
   </div>
 </section>
 
 <!-- МЕСТО ПРОВЕДЕНИЯ -->
 <section class="place bg-l3" id="place">
-  <div class="title sm:text-center sm:mb-10 mb-6" data-animation="fadeInUp">МЕСТО ПРОВЕДЕНИЯ</div>
-  <div class="p-4 grid md:grid-cols-2 bg-l2 rounded-xl sm:rounded-2xl gap-4" data-animation="fadeInUp">
+  <div class="mb-6 title sm:text-center sm:mb-10" data-animation="fadeInUp">МЕСТО ПРОВЕДЕНИЯ</div>
+  <div class="grid gap-4 p-4 md:grid-cols-2 bg-l2 rounded-xl sm:rounded-2xl" data-animation="fadeInUp">
     <div class="ratio ratio-[31/22] md:ratio-[592/632] rounded-xl sm:rounded-2xl overflow-hidden">
-      <img src="img/test.gif" alt="" class="absolute-fit object-cover" />
+      <img src="img/test.gif" alt="" class="object-cover absolute-fit" />
     </div>
-    <a href="img/scheme-sempl.png" data-fancybox class="rounded-xl sm:rounded-2xl p-6 bg-l3">
-      <div class="text-xl sm:text-2xl font-semibold mb-8">Схема комплекса</div>
+    <a href="img/scheme-sempl.png" data-fancybox class="p-6 rounded-xl sm:rounded-2xl bg-l3">
+      <div class="mb-8 text-xl font-semibold sm:text-2xl">Схема комплекса</div>
       <img src="img/scheme-sempl.png" alt="" class="mx-auto" />
     </a>
   </div>
 
-  <div class="place-jigurda mt-4" data-animation="fadeInUp">
-    <div class="text-xl font-bold mb-6">КВЦ «ЭКСПОФОРУМ», КОНФЕРЕНЦ-ЗАЛ Е7</div>
+  <div class="mt-4 place-jigurda" data-animation="fadeInUp">
+    <div class="mb-6 text-xl font-bold">КВЦ «ЭКСПОФОРУМ», КОНФЕРЕНЦ-ЗАЛ Е7</div>
     <div class="max-sm:text-sm">
       Экспофорум - новый конгрессно-выставочный центр, открывшийся в Санкт-Петербурге в 2014 году. <br />
       Это самая современная в Европе и России площадка для проведения деловых и развлекательных мероприятий любого
       масштаба и формата
     </div>
-    <div class="mt-4 text-sec font-semibold max-sm:text-sm">196140, Санкт-Петербург, Петербургское шоссе, 64/1</div>
+    <div class="mt-4 font-semibold text-sec max-sm:text-sm">196140, Санкт-Петербург, Петербургское шоссе, 64/1</div>
   </div>
 </section>
 
@@ -509,23 +509,23 @@
 
 <!-- контакты -->
 <section class="contacts" id="contacts">
-  <div class="title sm:text-center sm:mb-10 mb-6" data-animation="fadeInUp">контакты</div>
+  <div class="mb-6 title sm:text-center sm:mb-10" data-animation="fadeInUp">контакты</div>
 
-  <div class="grid lg:grid-cols-2 gap-4 lg:gap-8">
+  <div class="grid gap-4 lg:grid-cols-2 lg:gap-8">
     <% for(let i = 0; i < 2; i++) { %>
     <div class="flex items-center gap-3 p-4 sm:pl-10 rounded-2xl bg-l3 text-default" data-animation="fadeInUp">
       <div>
         <div class="font-semibold text-lg sm:text-2.5xl">Екатерина Гриценко</div>
         <div class="max-sm:text-xs">Директор деловой программы</div>
         <div class="flex mt-3 sm:mt-5">
-          <a href="javascript:;" class="btn btn-text gap-1 sm:gap-3 hover-underline relative">
+          <a href="javascript:;" class="relative gap-1 btn btn-text sm:gap-3 hover-underline">
             <div class="absolute -inset-4"></div>
-            <c-icon class="icon text-2xl text-primary" href="/img/icons.svg#email"></c-icon>
+            <c-icon class="text-2xl icon text-primary" href="/img/icons.svg#email"></c-icon>
             <div class="max-sm:text-xs">e.gritsenko@rusfishexpo.com</div>
           </a>
         </div>
       </div>
-      <img src="img/test.gif" alt="" class="size-20 sm:size-40 rounded-lg object-cover ml-auto" />
+      <img src="img/test.gif" alt="" class="object-cover ml-auto rounded-lg size-20 sm:size-40" />
     </div>
     <% } %>
   </div>
