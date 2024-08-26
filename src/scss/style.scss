@@ -465,6 +465,39 @@ body {
       padding: 24px 16px;
     }
   }
+
+  &-tabs {
+    border-bottom: 1px solid theme('colors.default / 20%');
+
+    &-plate {
+      position  : absolute;
+      bottom    : 0;
+      height    : 2px;
+      background: theme('colors.primary');
+      transition: .25s ease;
+    }
+  }
+
+  &-tab {
+    padding-bottom: 18px;
+    padding-top   : 18px;
+    font-size     : 22px;
+    text-align    : center;
+    width         : 100%;
+
+    @media (max-width: theme('screens.md')) {
+      font-size: 18px;
+    }
+
+    @media (max-width: theme('screens.xs')) {
+      font-size: 16px;
+    }
+
+    &.tab-active {
+      font-weight  : 600;
+      border-bottom: 2px solid theme('colors.primary');
+    }
+  }
 }
 
 .place {
