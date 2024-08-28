@@ -41,6 +41,10 @@ function init() {
     ScrollTrigger.refresh()
   })
 
+  document.addEventListener('tabchange', () => {
+    ScrollTrigger.refresh()
+  })
+
   // parallax
   {
     const items = document.querySelectorAll('[data-parallax]')
