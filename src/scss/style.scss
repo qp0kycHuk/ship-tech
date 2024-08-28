@@ -2,7 +2,7 @@
 @import 'radar';
 
 :root {
-  // theme colors
+  /* theme colors */
   --primary-rgb : #{cl(#002E65)};
   --sec-rgb     : #{cl(#D8E037)};
   --blue-rgb    : #{cl(#3DAEE3)};
@@ -10,7 +10,7 @@
   --green-rgb   : #{cl(#27ae60)};
   --yellow-rgb  : #{cl(#FECB29)};
 
-  // colors
+  /* colors */
   --bg1-rgb     : #{cl(#ededed)};
   --bg2-rgb     : #{cl(#EEF2F8)};
   --bg3-rgb     : #{cl(#fff)};
@@ -18,7 +18,7 @@
   --black-rgb   : #{cl(#2D2E30)};
   --white-rgb   : #{cl(#fff)};
 
-  // variables
+  /* variables */
   --bg1    : rgb(var(--bg1-rgb));
   --bg2    : rgb(var(--bg2-rgb));
   --bg3    : rgb(var(--bg3-rgb));
@@ -48,7 +48,7 @@ body {
 }
 
 @media (hover) {
-  // temp
+  /* temp */
 
   .btn-white:hover,
   .btn-white:is(.btn-group:hover .btn),
@@ -58,11 +58,11 @@ body {
 }
 
 @layer components {
-  .active-enabled:not(:is(:is(.toggle-active, .tab-active, .active) .active-enabled)) {
+  .active-enabled:not(:is(:is(.toggle-active, .active) .active-enabled)) {
     display: none !important;
   }
 
-  .active-disabled:is(:is(.toggle-active, .tab-active, .active) .active-disabled) {
+  .active-disabled:is(:is(.toggle-active, .active) .active-disabled) {
     display: none !important;
   }
 
