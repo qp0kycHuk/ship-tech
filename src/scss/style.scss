@@ -641,3 +641,19 @@ body {
   padding-top   : 48px;
   padding-bottom: 72px;
 }
+
+.dialog {
+  max-width    : 100%;
+  border-radius: 32px;
+  background   : theme('colors.l3');
+
+  @media (max-width: theme('screens.sm')) {
+    border-radius: 24px;
+  }
+
+}
+
+.dialog-dude {
+  width: 600px;
+
+}
