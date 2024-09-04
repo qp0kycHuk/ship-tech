@@ -1,0 +1,78 @@
+<%= require('./html-includes/header.html')() %>
+<!--  -->
+<%= require('./html-includes/page-top.html')() %>
+
+<section class="p-section bg-l3">
+  <div class="flex flex-wrap items-center justify-between gap-5 mb-6" data-animation="fadeInUp">
+    <div class="flex items-center justify-center h-10 px-6 text-base font-normal text-center border border-solid rounded-full border-default/20">#важное</div>
+    <span class="text-sm font-semibold sm:text-base">21.03.2024</span>
+  </div>
+  <div class="ratio ratio-[610/332] rounded-2xl overflow-hidden bg-default/20 mb-8" data-animation="fadeInUp">
+    <img src="img/test.gif" alt="" class="object-cover absolute-fit">
+  </div>
+  <div class="font-normal text-sm/normal sm:text-base/normal" data-animation="fadeInUp">
+    <ol class="flex flex-col gap-5 pl-5 list-decimal list-outside">
+      <% for(let i = 0; i < 5; i++) { %>
+      <li>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos optio ratione delectus, quis temporibus eveniet perspiciatis quidem repellat maxime repudiandae hic aliquam sunt sequi vitae voluptatem ullam consequuntur tempore sit.
+      </li>
+      <% } %>
+    </ol>
+  </div>
+</section>
+
+<section class="overflow-hidden news bg-l2">
+  <div class="mb-6 title sm:mb-10" data-animation="fadeInUp">другие новости</div>
+
+  <div class="relative" data-animation="fadeInUp">
+    <div class="news-slider swiper -mx-2 lg:-mx-3.5 max-md:overflow-visible">
+      <div class="swiper-wrapper">
+        <% for(let i = 0; i < 10; i++) { %>
+        <div class="swiper-slide w-[300px] md:w-1/3 lg:w-1/4 px-2 lg:px-3.5">
+          <div class="h-full news-item">
+            <div class="ratio ratio-[285/214]">
+              <img src="img/test.gif" alt="" class="object-cover absolute-fit" />
+            </div>
+            <div class="p-2 py-4 lg:p-6 news-item-content">
+              <div class="mb-3 opacity-70 max-sm:text-sm">21.06.2024</div>
+              <div class="mb-3 font-bold sm:text-xl">Открытие SHIP TECH GLOBAL в Экспофорум</div>
+              <div class="line-clamp-3 opacity-70 max-lg:text-sm">
+                Проект выставочной команды Expo Solutions Group – организатора выставки Seafood Проект выставочной
+                команды Expo Solutions Group – организатора выставки Seafo...
+              </div>
+              <div class="mt-8"></div>
+              <button class="mt-auto btn btn-primary btn-fill max-sm:w-full max-sm:px-1">Подробнее</button>
+            </div>
+          </div>
+        </div>
+        <% } %>
+      </div>
+    </div>
+
+    <div class="absolute top-1/2 right-full -mr-2 z-[2] max-md:hidden">
+      <button class="shadow-lg btn btn-primary btn-whitebg btn-icon roundef-full news-slider-prev">
+        <c-icon class="text-2xl icon" href="img/icons.svg#to-left"></c-icon>
+      </button>
+    </div>
+
+    <div class="absolute top-1/2 left-full -ml-2 z-[2] max-md:hidden">
+      <button class="shadow-lg btn btn-primary btn-whitebg btn-icon roundef-full news-slider-next">
+        <c-icon class="text-2xl icon" href="img/icons.svg#to-right"></c-icon>
+      </button>
+    </div>
+  </div>
+  <div class="flex mt-8" data-animation="fadeInUp">
+    <a href="javascript:;" class="mx-auto btn btn-primary btn-contur max-sm:w-full">Все новости</a>
+  </div>
+</section>
+<script>
+  new Swiper('.news-slider', {
+    slidesPerView: 'auto',
+    navigation: {
+      prevEl: '.news-slider-prev',
+      nextEl: '.news-slider-next',
+    },
+  })
+</script>
+
+<%= require('./html-includes/footer.html')() %>
