@@ -514,7 +514,6 @@ body {
   }
 
   &-jigurda {
-
     padding      : 44px;
     background   : url("../img/place-jigurda.jpg") no-repeat center / cover, theme('colors.primary');
     border-radius: 16px;
@@ -660,4 +659,19 @@ body {
 .dialog-dude {
   width: 600px;
 
+}
+
+.detail-text {
+  // temp
+
+  ol,
+  ul {
+    line-height : 2;
+    list-style  : disc;
+    padding-left: 20px;
+  }
+
+  ol {
+    list-style: decimal;
+  }
 }
