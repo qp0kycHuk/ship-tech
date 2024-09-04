@@ -3,9 +3,11 @@
 <%= require('./html-includes/page-top.html')() %>
 
 <section class="p-section bg-l3">
-  <div class="flex flex-wrap items-center justify-between gap-5 mb-6" data-animation="fadeInUp">
+  <div class="flex flex-wrap items-center gap-5 mb-6" data-animation="fadeInUp">
+    <% for(let i = 0; i < 2; i++) { %>
     <div class="flex items-center justify-center h-10 px-6 text-base font-normal text-center border border-solid rounded-full border-default/20">#важное</div>
-    <span class="text-sm font-semibold sm:text-base">21.03.2024</span>
+    <% } %>
+    <span class="text-sm font-semibold sm:text-base ml-auto">21.03.2024</span>
   </div>
   <div class="ratio ratio-[610/332] rounded-2xl overflow-hidden bg-default/20 mb-8" data-animation="fadeInUp">
     <img src="img/test.gif" alt="" class="object-cover absolute-fit">
@@ -35,7 +37,7 @@
             </div>
             <div class="p-2 py-4 lg:p-6 news-item-content">
               <div class="mb-3 opacity-70 max-sm:text-sm">21.06.2024</div>
-              <div class="mb-3 font-bold sm:text-xl">Открытие SHIP TECH GLOBAL в Экспофорум</div>
+              <div class="mb-3 font-bold sm:text-xl line-clamp-2">Открытие SHIP TECH GLOBAL в Экспофорум</div>
               <div class="line-clamp-3 opacity-70 max-lg:text-sm">
                 Проект выставочной команды Expo Solutions Group – организатора выставки Seafood Проект выставочной
                 команды Expo Solutions Group – организатора выставки Seafo...

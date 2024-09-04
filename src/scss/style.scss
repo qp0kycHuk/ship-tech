@@ -89,12 +89,12 @@ body {
       content   : '';
       position  : absolute;
       top       : 100%;
-      height    : 2px;
       left      : 0;
       width     : 100%;
+      height    : 2px;
       background: theme('colors.sec');
-      transition: .25s ease;
       transform : scaleX(0);
+      transition: .25s ease;
     }
 
     @media(hover) {
@@ -139,24 +139,18 @@ body {
 
 
 .header {
+  display        : flex;
+  align-items    : center;
+  justify-content: space-between;
   position       : fixed;
   top            : 0;
   left           : 0;
   width          : 100%;
-  display        : flex;
-  align-items    : center;
-  justify-content: space-between;
   padding-top    : 16px;
   padding-bottom : 16px;
-  z-index        : theme('zIndex.2');
   color          : #fff;
   transition     : .25s ease;
-
-  &:is(body:not(.scroll-top) &) {
-    background    : theme('colors.primary / 95%');
-    padding-top   : 10px;
-    padding-bottom: 10px;
-  }
+  z-index        : theme('zIndex.2');
 
   &-logo {
     height    : 64px;
@@ -165,6 +159,12 @@ body {
     @media (max-width: theme('screens.sm')) {
       height: 42px;
     }
+  }
+
+  &:is(body:not(.scroll-top) &) {
+    padding-top   : 10px;
+    padding-bottom: 10px;
+    background    : theme('colors.primary / 95%');
   }
 
   &:is(body:not(.scroll-top) &) &-logo {
@@ -178,18 +178,18 @@ body {
 
 
 .started {
+  position      : relative;
   min-height    : 910px;
-  background    : theme('colors.primary');
-  color         : #fff;
+  overflow      : hidden;
   padding-top   : 135px;
   padding-bottom: 100px;
-  position      : relative;
-  overflow      : hidden;
+  background    : theme('colors.primary');
+  color         : #fff;
 
   @media (max-width: theme('screens.lg')) {
+    min-height    : 0;
     padding-top   : 110px;
     padding-bottom: 32px;
-    min-height    : 0;
   }
 
   &-logo {
@@ -203,18 +203,18 @@ body {
   }
 
   &-content {
-    position      : relative;
     display       : flex;
-    flex-direction: column;
     align-items   : center;
+    flex-direction: column;
+    position      : relative;
     text-align    : center;
 
   }
 
   &-date {
-    border-radius: 16px;
-    border       : 1px solid currentColor;
     overflow     : hidden;
+    border       : 1px solid currentColor;
+    border-radius: 16px;
   }
 
   &-subtitle {
@@ -228,8 +228,8 @@ body {
     --radius: calc(974px / 2);
 
     position: absolute;
-    left    : calc(50% - var(--radius));
     bottom  : calc(-1 * var(--radius));
+    left    : calc(50% - var(--radius));
 
     @media (max-width: theme('screens.lg')) {
       --radius: calc(620px / 2);
@@ -242,18 +242,18 @@ body {
 }
 
 .menu {
-  position      : fixed;
-  left          : 0;
-  top           : 0;
-  height        : 100%;
-  width         : 425px;
-  max-width     : 100%;
-  z-index       : theme('zIndex.3');
-  background    : theme('colors.l3');
-  padding       : 16px 16px 24px;
   display       : flex;
   flex-direction: column;
+  position      : fixed;
+  top           : 0;
+  left          : 0;
+  width         : 425px;
+  max-width     : 100%;
+  height        : 100%;
+  padding       : 16px 16px 24px;
+  background    : theme('colors.l3');
   transition    : .25s ease;
+  z-index       : theme('zIndex.3');
 
   &:not(.toggle-active) {
     transform: translateX(-100%);
@@ -262,9 +262,9 @@ body {
   &-shadow {
     position  : fixed;
     inset     : 0;
-    z-index   : calc(theme('zIndex.3') - 1);
     background: rgba(0, 0, 0, 0.5);
     transition: .25s ease;
+    z-index   : calc(theme('zIndex.3') - 1);
   }
 
   &:not(.toggle-active)+&-shadow {
@@ -277,21 +277,21 @@ body {
   display        : flex;
   align-items    : center;
   justify-content: center;
-  gap            : 12px;
+  padding-top    : 10px;
+  padding-bottom : 10px;
   background     : linear-gradient(0deg, rgba(33, 182, 252, 0.7), rgba(33, 182, 252, 0.7)),
     linear-gradient(90deg, rgba(61, 174, 227, 0) 0%, #72D2FF 100%);
-  color         : #fff;
-  padding-top   : 10px;
-  padding-bottom: 10px;
+  color: #fff;
+  gap  : 12px;
 }
 
 .about {
   display              : grid;
   align-items          : start;
   grid-template-columns: 554fr 600fr;
-  gap                  : 76px;
   padding-top          : 78px;
   padding-bottom       : 78px;
+  gap                  : 76px;
 
   @media (max-width: theme('screens.lg')) {
     gap: 32px;
@@ -305,8 +305,8 @@ body {
 
   &-jigurda {
     padding      : 24px;
-    border-radius: 16px;
     background   : #EEF2F8;
+    border-radius: 16px;
 
     @media (max-width: theme('screens.md')) {
       padding: 16px;
@@ -328,10 +328,10 @@ body {
   }
 
   &-anchors {
-    background   : url("../img/this-anchors.jpg") no-repeat right top / cover, theme('colors.primary');
-    color        : #fff;
     padding      : 40px;
+    background   : url("../img/this-anchors.jpg") no-repeat right top / cover, theme('colors.primary');
     border-radius: 16px;
+    color        : #fff;
 
     @media (max-width: theme('screens.sm')) {
       padding: 20px 10px;
@@ -349,8 +349,8 @@ body {
   }
 
   &-item {
-    border-radius: 16px;
     overflow     : hidden;
+    border-radius: 16px;
 
     &-content {
       padding: 24px;
@@ -363,10 +363,10 @@ body {
 }
 
 .who {
-  background    : url("../img/texture-primary.jpg") no-repeat center / cover, theme('colors.primary');
-  color         : #fff;
   padding-top   : 64px;
   padding-bottom: 80px;
+  background    : url("../img/texture-primary.jpg") no-repeat center / cover, theme('colors.primary');
+  color         : #fff;
 
   @media (max-width: theme('screens.md')) {
     padding-top   : 32px;
@@ -374,17 +374,17 @@ body {
   }
 
   &-block {
-    background   : theme('colors.l3');
-    color        : theme('colors.default');
-    border-radius: 16px;
     overflow     : hidden;
+    background   : theme('colors.l3');
+    border-radius: 16px;
+    color        : theme('colors.default');
   }
 }
 
 .how {
-  background    : url("../img/texture-l2.jpg") no-repeat center / cover, theme('colors.l2');
   padding-top   : 72px;
   padding-bottom: 72px;
+  background    : url("../img/texture-l2.jpg") no-repeat center / cover, theme('colors.l2');
 
   @media (max-width: theme('screens.md')) {
     padding-top   : 32px;
@@ -392,9 +392,9 @@ body {
   }
 
   &-block {
+    overflow     : hidden;
     background   : theme('colors.l3');
     border-radius: 16px;
-    overflow     : hidden;
   }
 }
 
@@ -409,9 +409,9 @@ body {
 }
 
 .partner {
-  background    : url("../img/texture-l2.jpg") no-repeat center / cover, theme('colors.l2');
   padding-top   : 64px;
   padding-bottom: 72px;
+  background    : url("../img/texture-l2.jpg") no-repeat center / cover, theme('colors.l2');
 
   @media (max-width: theme('screens.md')) {
     padding-top   : 32px;
@@ -429,26 +429,30 @@ body {
   }
 
   &-item {
+    display       : flex;
+    flex-direction: column;
+    overflow      : hidden;
     background    : theme('colors.l3');
     border        : 1px solid theme('colors.default / 10%');
     border-radius : 16px;
-    overflow      : hidden;
-    display       : flex;
-    flex-direction: column;
 
     &-content {
-      flex-grow     : 1;
       display       : flex;
-      flex-direction: column;
       align-items   : start;
+      flex-direction: column;
+      flex-grow     : 1;
     }
+  }
+
+  &-plug {
+    background-color: #EEF2F8;
   }
 }
 
 .programm {
-  background    : url("../img/texture-l2.jpg") repeat-y top / 100% auto, theme('colors.l2');
   padding-top   : 64px;
   padding-bottom: 72px;
+  background    : url("../img/texture-l2.jpg") repeat-y top / 100% auto, theme('colors.l2');
 
   @media (max-width: theme('screens.md')) {
     padding-top   : 32px;
@@ -456,10 +460,10 @@ body {
   }
 
   &-item {
+    padding      : 32px;
     background   : theme('colors.l3');
     border-radius: 16px;
     box-shadow   : 0 4px 18px 0 rgba(0, 0, 0, 0.05);
-    padding      : 32px;
 
     @media (max-width: theme('screens.md')) {
       padding: 24px 16px;
@@ -479,11 +483,11 @@ body {
   }
 
   &-tab {
-    padding-bottom: 18px;
+    width         : 100%;
     padding-top   : 18px;
+    padding-bottom: 18px;
     font-size     : 22px;
     text-align    : center;
-    width         : 100%;
 
     @media (max-width: theme('screens.md')) {
       font-size: 18px;
@@ -494,8 +498,8 @@ body {
     }
 
     &.tab-active {
-      font-weight  : 600;
       border-bottom: 2px solid theme('colors.primary');
+      font-weight  : 600;
     }
   }
 }
@@ -510,11 +514,11 @@ body {
   }
 
   &-jigurda {
-    background   : url("../img/place-jigurda.jpg") no-repeat center / cover, theme('colors.primary');
-    color        : #fff;
-    border-radius: 16px;
 
-    padding: 44px;
+    padding      : 44px;
+    background   : url("../img/place-jigurda.jpg") no-repeat center / cover, theme('colors.primary');
+    border-radius: 16px;
+    color        : #fff;
 
     @media (max-width: theme('screens.md')) {
       padding: 24px 16px;
@@ -532,10 +536,10 @@ body {
 }
 
 .contacts {
-  background    : url("../img/texture-primary.jpg") no-repeat center / cover, theme('colors.primary');
-  color         : #fff;
   padding-top   : 64px;
   padding-bottom: 90px;
+  background    : url("../img/texture-primary.jpg") no-repeat center / cover, theme('colors.primary');
+  color         : #fff;
 
   @media (max-width: theme('screens.md')) {
     padding-top   : 32px;
@@ -546,18 +550,18 @@ body {
 }
 
 .footer {
-  background     : url("../img/footer.jpg") no-repeat center / cover, theme('colors.primary');
-  color          : #fff;
   display        : flex;
   justify-content: space-between;
+  margin-top     : auto;
   padding-top    : 32px;
   padding-bottom : 40px;
-  margin-top     : auto;
+  background     : url("../img/footer.jpg") no-repeat center / cover, theme('colors.primary');
+  color          : #fff;
 
   @media (max-width: theme('screens.lg')) {
     flex-direction: column;
-    gap           : 40px;
     background    : url("../img/footer-md.jpg") no-repeat center / cover, theme('colors.primary');
+    gap           : 40px;
   }
 
   @media (max-width: theme('screens.sm')) {
@@ -576,34 +580,34 @@ body {
 }
 
 .not-found {
+  display       : flex;
+  align-items   : center;
+  flex-direction: column;
   flex-grow     : 1;
   min-height    : 910px;
+  padding-top   : 184px;
   background    : theme('colors.primary');
   color         : #fff;
-  padding-top   : 184px;
-  display       : flex;
-  flex-direction: column;
-  align-items   : center;
   text-align    : center;
 
   @media (max-width: theme('screens.lg')) {
+    min-height    : 0;
     padding-top   : 130px;
     padding-bottom: 52px;
-    min-height    : 0;
   }
 
   &-title {
     display      : flex;
     align-items  : center;
+    margin-bottom: 64px;
     font-size    : 228px;
     font-weight  : 700;
     gap          : 32px;
-    margin-bottom: 64px;
 
     @media (max-width: theme('screens.md')) {
+      margin-bottom: 48px;
       font-size    : calc(100vw * 113 / 375);
       gap          : 10px;
-      margin-bottom: 48px;
     }
   }
 
@@ -613,8 +617,8 @@ body {
 
     @media (max-width: theme('screens.md')) {
       width     : calc(100vw * 155 / 375);
-      height    : calc(100vw * 153 / 375);
       max-width : 293px;
+      height    : calc(100vw * 153 / 375);
       max-height: 290px;
     }
   }
@@ -644,8 +648,8 @@ body {
 
 .dialog {
   max-width    : 100%;
-  border-radius: 32px;
   background   : theme('colors.l3');
+  border-radius: 32px;
 
   @media (max-width: theme('screens.sm')) {
     border-radius: 24px;
