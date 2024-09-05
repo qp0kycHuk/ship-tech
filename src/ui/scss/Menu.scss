@@ -1,20 +1,5 @@
 .c-menu-items {
-  position  : absolute;
-  z-index   : theme('zIndex.1');
-  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.04);
-  border    : 1px solid theme('colors.default / 5%');
-
-
-  &:not(.active) {
-    pointer-events: none;
-    opacity       : 0;
-
-    @apply scale-95;
-
-    @media (max-width:theme('screens.md')) {
-      transform: translateY(20px);
-    }
-  }
+  //  temp
 
   @media (min-width:theme('screens.md')) {
     &-top {
@@ -65,18 +50,48 @@
       @apply bottom-0 right-full mr-2 origin-bottom-right
     }
   }
+}
 
-  @media (max-width:theme('screens.md')) {
-    position  : fixed;
-    bottom    : 0;
-    left      : 0;
-    width     : 100%;
-    height    : auto;
-    z-index   : theme('zIndex.4');
-    max-height: 400px;
-    overflow  : auto;
+@layer components {
+  c-menu-button {
+    display: block;
   }
 
+  c-menu {
+    display: block;
+  }
+
+  c-menu-items {
+    display   : block;
+    position  : absolute;
+    z-index   : theme('zIndex.1');
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.04);
+    border    : 1px solid theme('colors.default / 5%');
+
+
+    &:not(.active) {
+      pointer-events: none;
+      opacity       : 0;
+
+      @apply scale-95;
+
+      @media (max-width:theme('screens.md')) {
+        transform: translateY(20px);
+      }
+    }
+
+    @media (max-width:theme('screens.md')) {
+      position  : fixed;
+      bottom    : 0;
+      left      : 0;
+      width     : 100%;
+      height    : auto;
+      z-index   : theme('zIndex.4');
+      max-height: 400px;
+      overflow  : auto;
+    }
+
+  }
 }
 
 body.c-menu-opened {
