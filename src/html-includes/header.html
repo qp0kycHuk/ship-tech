@@ -5,6 +5,13 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
   <title>Ship tech</title>
 
   <script>
@@ -15,9 +22,9 @@
 <body class="scroll-top">
   <header class="header">
     <div class="flex items-center gap-3 sm:gap-6">
-      <button class="btn btn-text relative lg:hidden" data-toggle-link="menu">
+      <button class="relative btn btn-text lg:hidden" data-toggle-link="menu">
         <div class="absolute -inset-3"></div>
-        <c-icon class="icon text-2xl" href="img/icons.svg#menu"></c-icon>
+        <c-icon class="text-2xl icon" href="img/icons.svg#menu"></c-icon>
       </button>
 
       <img src="/img/logo.svg" alt="" class="header-logo" />
@@ -28,11 +35,11 @@
 
     <%= require('./lang-select.html')() %>
 
-    <a href="javascript:;" class="btn btn-text relative sm:hidden">
+    <a href="javascript:;" class="relative btn btn-text sm:hidden">
       <div class="absolute -inset-3"></div>
-      <c-icon class="icon text-2xl" href="/img/icons.svg#phone"></c-icon>
+      <c-icon class="text-2xl icon" href="/img/icons.svg#phone"></c-icon>
     </a>
-    <a href="javascript:;" class="btn btn-text hover-underline relative max-sm:hidden">
+    <a href="javascript:;" class="relative btn btn-text hover-underline max-sm:hidden">
       <div class="absolute -inset-6"></div>
       <span class="font-extrabold md:text-xl">+7 900 000-00-00</span>
     </a>
@@ -41,9 +48,9 @@
   <div class="menu lg:hidden" id="menu" data-toggle-cover>
     <div class="flex items-center justify-between">
       <div class="flex items-center gap-3 sm:gap-6">
-        <button class="btn btn-text relative" data-toggle-link="menu">
+        <button class="relative btn btn-text" data-toggle-link="menu">
           <div class="absolute -inset-3"></div>
-          <c-icon class="icon text-2xl" href="/img/icons.svg#circle-cross"></c-icon>
+          <c-icon class="text-2xl icon" href="/img/icons.svg#circle-cross"></c-icon>
         </button>
 
         <img src="/img/logo-color.svg" alt="" class="header-logo" />
@@ -56,17 +63,17 @@
 
     <div class="mt-6"></div>
     <div class="mt-auto">
-      <a href="javascript:;" class="btn btn-text hover-underline relative justify-start mb-2">
+      <a href="javascript:;" class="relative justify-start mb-2 btn btn-text hover-underline">
         <div class="absolute -inset-6"></div>
         <span class="">event@rusfishexpo.com </span>
       </a>
-      <a href="javascript:;" class="btn btn-text hover-underline relative justify-start">
+      <a href="javascript:;" class="relative justify-start btn btn-text hover-underline">
         <div class="absolute -inset-6"></div>
-        <span class="font-semibold text-xl">+7 (495) 215-06-75</span>
+        <span class="text-xl font-semibold">+7 (495) 215-06-75</span>
       </a>
-      <a href="javascript:;" class="btn btn-text hover-underline relative justify-start">
+      <a href="javascript:;" class="relative justify-start btn btn-text hover-underline">
         <div class="absolute -inset-6"></div>
-        <span class="font-semibold text-xl">+7 (495) 215-06-75</span>
+        <span class="text-xl font-semibold">+7 (495) 215-06-75</span>
       </a>
     </div>
   </div>
