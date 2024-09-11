@@ -471,8 +471,6 @@ body {
   }
 
   &-tabs {
-    border-bottom: 1px solid theme('colors.default / 20%');
-
     &-plate {
       position  : absolute;
       bottom    : 0;
@@ -482,12 +480,22 @@ body {
     }
   }
 
+  &-title {
+    background             : linear-gradient(90deg, rgba(0, 174, 255, 0) 0%, rgba(0, 174, 255, 0.6) 100%), #014391;
+    -webkit-text-fill-color: transparent;
+
+
+    @apply bg-clip-text;
+  }
+
   &-tab {
-    width         : 100%;
-    padding-top   : 18px;
-    padding-bottom: 18px;
-    font-size     : 22px;
-    text-align    : center;
+    width           : 100%;
+    padding-top     : 18px;
+    padding-bottom  : 18px;
+    background-color: #E6EBF0;
+    font-size       : 22px;
+    text-align      : center;
+
 
     @media (max-width: theme('screens.md')) {
       font-size: 18px;
@@ -498,8 +506,9 @@ body {
     }
 
     &.tab-active {
-      border-bottom: 2px solid theme('colors.primary');
-      font-weight  : 600;
+      font-weight: 600;
+
+      @apply bg-primary text-white;
     }
   }
 }
@@ -666,9 +675,9 @@ body {
 
   ol,
   ul {
+    padding-left: 20px;
     line-height : 2;
     list-style  : disc;
-    padding-left: 20px;
   }
 
   ol {

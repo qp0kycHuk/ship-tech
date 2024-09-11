@@ -2,22 +2,22 @@
 <!--  -->
 <%= require('./html-includes/page-top.html')() %>
 
-<section class="p-section bg-l3 overflow-hidden" data-tab-cover>
+<section class="p-section bg-l3" data-tab-cover>
   <div class="flex mb-8 gap-6 items-center z-[2]">
     <div class="font-semibold">Год проведения</div>
     <c-menu>
-      <c-menu-button class="btn btn-primary btn-contur btn-sm rounded-xl border-default/20 px-4 gap-2">
+      <c-menu-button class="gap-2 px-4 btn btn-primary btn-contur btn-sm rounded-xl border-default/20">
         <div class="font-bold">2024</div>
         <c-icon class="icon" href="img/icons.svg#to-right"></c-icon>
       </c-menu-button>
       <c-menu-items class="p-2 max-md:py-6 w-40 space-y-0.5" placement="bottom-start">
-        <a href="javascript:;" class="btn btn-xs btn-primary rounded-md px-2 justify-start">
+        <a href="javascript:;" class="justify-start px-2 rounded-md btn btn-xs btn-primary">
           2022
         </a>
-        <a href="javascript:;" class="btn btn-xs btn-primary rounded-md px-2 justify-start">
+        <a href="javascript:;" class="justify-start px-2 rounded-md btn btn-xs btn-primary">
           2023
         </a>
-        <button class="btn btn-xs btn-primary rounded-md px-2 justify-start" disabled>
+        <button class="justify-start px-2 rounded-md btn btn-xs btn-primary" disabled>
           2024
         </button>
       </c-menu-items>
