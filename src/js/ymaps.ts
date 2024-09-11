@@ -30,7 +30,7 @@ function mapsInit() {
         {},
         {
           iconLayout: 'default#image',
-          iconImageHref: '/img/map-point.svg',
+          iconImageHref: '/local/templates/main/img/map-point.svg',
           iconImageSize: sizeImage,
           iconImageOffset: [-1 * (sizeImage[0] / 2), -1 * sizeImage[1]],
           hasBalloon: true,
